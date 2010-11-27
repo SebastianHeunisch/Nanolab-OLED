@@ -1,0 +1,20 @@
+%% introduction.tex
+%%
+
+%% ==============================
+\chapter{Einleitung/Motivation}
+\label{ch:Introduction}
+%% ==============================
+
+Integrierte Schaltungen mit Supraleitern gewinnen immer mehr an Bedeutung.
+
+\begin{itemize}
+
+	\item{JJs für SQUIDS und Qubits}
+	\item{JJs mit bestimmten Parametern erforderlich}
+	\item{Herstellungsprozess Streuung unterworfen}
+	\item{Ziel: Charakterisierung des Herstellungsprozesses der JJs}
+\end{itemize}
+
+\dots
+
