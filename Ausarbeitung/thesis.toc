@@ -6,5 +6,7 @@
 \contentsline {chapter}{Literaturverzeichnis}{7}{section*.2}
 \select@language {ngerman}
 \select@language {ngerman}
+\select@language {ngerman}
+\select@language {ngerman}
 \contentsline {chapter}{Anhang}{9}{chapter*.4}
 \contentsline {section}{\numberline {A}First Appendix Section}{9}{section.3.1}
