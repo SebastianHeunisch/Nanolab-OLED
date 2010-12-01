@@ -10,9 +10,9 @@
 %% -------------------------------
 \hypersetup{
  pdfauthor={Wolfgang Heni und Sebastian Heunisch},
- pdftitle={Not set},
- pdfsubject={Not set},
- pdfkeywords={Not set}
+ pdftitle={Labor Nanotechnologie - OLED},
+ pdfsubject={Herstellung Organischer Leuchtdioden},
+ pdfkeywords={OLED}
 }
 
 
@@ -26,7 +26,7 @@
 
 \newcommand{\reviewerone}{?}
 \newcommand{\reviewertwo}{?}
-\newcommand{\advisor}{?}
+\newcommand{\advisor}{Dipl.-Ing Tobias Bocksrocker}
 \newcommand{\advisortwo}{?}
 
 \newcommand{\timestart}{XX. Monat 20XX}
