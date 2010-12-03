@@ -1,8 +1,53 @@
-This is BibTeX, Version 0.99cThe top-level auxiliary file: C:\Users\wo\Documents\Studium\WS1011\Labor Nanoelektronik\Nanolab-OLED\Ausarbeitung\thesis.aux
+This is BibTeX, Version 0.99d (TeX Live 2010/Arch Linux)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: thesis.aux
 A level-1 auxiliary file: titlepage.aux
 A level-1 auxiliary file: introduction.aux
 A level-1 auxiliary file: content.aux
 The style file: babalpha-fl.bst
 Database file #1: thesis.bib
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
 Warning--empty language in 
+You've used 1 entry,
+            3218 wiz_defined-function locations,
+            698 strings with 6535 characters,
+and the built_in function-call counts, 504 in all, are:
+= -- 38
+> -- 25
+< -- 0
++ -- 9
+- -- 9
+* -- 56
+:= -- 83
+add.period$ -- 2
+call.type$ -- 1
+change.case$ -- 7
+chr.to.int$ -- 1
+cite$ -- 2
+duplicate$ -- 22
+empty$ -- 34
+format.name$ -- 17
+if$ -- 88
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 2
+newline$ -- 20
+num.names$ -- 3
+pop$ -- 8
+preamble$ -- 1
+purify$ -- 8
+quote$ -- 0
+skip$ -- 14
+stack$ -- 0
+substring$ -- 7
+swap$ -- 8
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 8
+warning$ -- 1
+while$ -- 3
+width$ -- 2
+write$ -- 24
 (There was 1 warning)
