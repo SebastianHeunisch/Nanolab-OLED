@@ -28,7 +28,8 @@
 \usepackage[pdftex]{graphicx}
 \usepackage{vmargin}          % Adjust margins in a simple way
 \usepackage{fancyhdr}         % Define simple headings
-\usepackage{subfigure}
+%\usepackage{subfigure}
+
 \usepackage{url}
 \usepackage[absolute,overlay]{textpos}
 \usepackage{tikz}
@@ -42,7 +43,7 @@
 
 \usepackage{setspace}
 \onehalfspacing
-
+\usepackage{subfig}
 \usepackage{color}
 \usepackage{colortbl}
 \usepackage{booktabs}
