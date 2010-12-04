@@ -5,6 +5,16 @@
 \chapter{Grundlagen}
 \label{ch:Grundlagen}
 %% ==============
+\section{Ladungsträgerinjektion}
+\label{ch:Grundlagen:sec:Injektion}
+
+\section{PEDOT:PSS}
+\label{ch:Grundlagen:sec:PEDOT}
+
+\section{Lichterzeugung}
+\label{ch:Grundlagen:sec:Lichterzeugung}
+
+
 
 
 %% ===========================
@@ -81,3 +91,78 @@ Die Aufzeichnung der Messdaten erfolgte an einem Computer mit dem Programm "`\te
 
 \chapter{Auswertung der Messergebnisse}
 \label{ch:Messung}
+
+\section{Fehlerhafte Messungen}
+\label{ch:Messung:sec:Fehler}
+Bei der Durchführung der Messungen traten verschiedene Effekte auf, die so nicht zu erwarten waren und auf einen Fehler im Messystem hindeuten. 
+
+
+
+Verschiebeung der Spektren
+	Unterschiedliche Spannungen - unterschiedliche Proben
+	
+
+Fehlen einzelner Spektren bei bestimmten Spannungswerten
+	Kontaktprobleme?
+	
+
+---> entsprechender Spannungswert nicht auswertbar
+
+
+
+
+Aussteuerung des Sensor bei ~5 V
+	- reduzierung von tintegration von 30 auf 10 ms
+	- wartezeit zw. 2 messungen: 1 s 
+	hat nix gebracht
+
+-> Werte oberhalt 5 V nicht verwertbar
+
+
+Evtl. 4 und 7 verschrtauscht
+
+
+OLED6 ist scheiße!
+	a.) Nicht die dünnste, sondern die Dickste, weil zu lange gewartet vor Spin-Coating: -> Angedrocknet: eher unwarscheinlich
+	
+	b.) Probleme mit der Kontaktierung -> dadurch viel höherer Wdstd. bzw. garkeine messung!
+	
+
+
+\section{Stromdichte/Spannung-Kennlinien}
+\label{ch:Messung:sec:jU}
+%Anhand von Stromdichte/Spannungs ($j/U$)-Kennlinen lässt sich die Stromdichte in Abhängigkeit der angelegten Spannung über die OLED
+a.) Typischer diodenkennlinienverlauf
+		Kein Stromfluss bis ~3 V
+		OLED1: Ohmscher Anteil darunter
+		
+		Erklärung für Diodenkennlinie:
+		- Ab dieser spannung "`flachbandfall"' siehe Grundlagen
+		- 
+
+
+-  Ohmscher Anteil parellel zur Diode bei OLED1
+
+- Probe OLED1 und OLED2: Geringere Stromdichte als alle anderen
+	Höherer Widerstand
+	Schlechtere Ladungsträgerinjektion in Organik
+	wegen: Fehlendes PEDOT:PSS
+		
+
+
+- 
+
+
+
+
+\begin{figure}%
+\centering
+\begin{adjustwidth}{0cm}{0cm}
+	\subfloat[Ansicht von oben]{\includegraphics[width=.4\columnwidth]{Grafiken/jU_PEDOT_ausschnitt.pdf}\label{fig:jUPEDOT_ausschnitt}}
+	\subfloat[Ansicht von der Seite]{\includegraphics[width=.7\columnwidth]{Grafiken/jU_PEDOT.pdf} \label{fig:jUPEDOT}}%
+	\end{adjustwidth}
+\caption[j/U-Kennlinien: OLED mit und ohne PEDOT]{blabla}%
+\label{fig:jUPedot_mit}%
+\end{figure}
+
+
