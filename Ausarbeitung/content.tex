@@ -112,21 +112,30 @@ Fehlen einzelner Spektren bei bestimmten Spannungswerten
 
 
 Aussteuerung des Sensor bei ~5 V
-	- reduzierung von tintegration von 30 auf 10 ms
+	- reduzierung von $t_{integration}$ von 30 auf 10 ms
 	- wartezeit zw. 2 messungen: 1 s 
 	hat nix gebracht
 
 -> Werte oberhalt 5 V nicht verwertbar
+--> OLED1+2 wenn Leistung maximum überschritten hat wieder auswertbar
+    -> hier leichte veränderung des maximums
 
 
 Evtl. 4 und 7 verschrtauscht
 
 
 OLED6 ist scheiße!
+- Energiedichte eine Größenordnung kleiner als beim rest
+- Strom viel kleiner
+- Eigentl dünnste schicht
+- Nur leichte verschiebung von 6,5 und 8 --> daher kein eindeutiger trend.
+
+   Mögliche Gründe
 	a.) Nicht die dünnste, sondern die Dickste, weil zu lange gewartet vor Spin-Coating: -> Angedrocknet: eher unwarscheinlich
 	
 	b.) Probleme mit der Kontaktierung -> dadurch viel höherer Wdstd. bzw. garkeine messung!
-	
+
+	c.) Schicht zu dünn
 	
 \subsection{Auswahl von Ausreisern}
 \label{ch:Messung:sec:Fehler:sub:Bewertung}
@@ -177,8 +186,9 @@ a.) Typischer diodenkennlinienverlauf
 \label{ch:Messung:sec:Spektrum}
 
 - Zunahme der Energiedichte für steigende Spannung
-	Ab bestimtmer Spannung sinkt Energiedichte wieder ab
-- 
+	
+- Ab bestimtmer Spannung sinkt Energiedichte wieder ab
+   --> bei OLED1+2 leichte verschiebung des Maximums
 
 
 
