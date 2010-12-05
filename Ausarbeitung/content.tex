@@ -70,8 +70,8 @@ Abbildung \ref{fig:OLED_Schema} zeigt den schematischen Aufbau der hergestellten
 \begin{figure}%
 \centering
 \begin{adjustwidth}{0cm}{0cm}
-	\subfloat[Ansicht von oben]{\includegraphics[width=.4\columnwidth]{Grafiken/OLED-Ansicht-Oben.pdf}\label{fig:OLEDOben}}
-	\subfloat[Ansicht von der Seite]{\includegraphics[width=.7\columnwidth]{Grafiken/OLED-Ansicht-Seite.pdf} \label{fig:OLEDSeite}}%
+	\subfloat[Ansicht von oben]{\includegraphics[width=.5\columnwidth]{Grafiken/OLED-Ansicht-Oben.pdf}\label{fig:OLEDOben}}
+	\subfloat[Ansicht von der Seite]{\includegraphics[width=.5\columnwidth]{Grafiken/OLED-Ansicht-Seite.pdf} \label{fig:OLEDSeite}}%
 	\end{adjustwidth}
 \caption[Schema: Hergestellte OLED]{Schematische Darstellung der hergestellten Proben. \textbf{(a)} Die Ansicht von oben zeigt die zwei Kathodenflächen (grau) sowie das organische Material (gelb). Im unteren bereich ist das Fehlen der ITO-Schicht zu erkennen. \textbf{(b)} Die Ansicht von der Seite zeigt den Schichtaufbau der hergestellten OLEDs. }%
 \label{fig:OLED_Schema}%
@@ -94,47 +94,70 @@ Die Aufzeichnung der Messdaten erfolgte an einem Computer mit dem Programm "`\te
 
 \section{Fehlerhafte Messungen}
 \label{ch:Messung:sec:Fehler}
-Bei der Durchführung der Messungen traten verschiedene Effekte auf, die so nicht zu erwarten waren und auf einen Fehler im Messystem hindeuten. 
+Bei der Durchführung der Messungen traten verschiedene Effekte auf, die so nicht zu erwarten waren und auf einen Fehler im Messsystem hindeuten. 
+
+Bei der Aufzeichnung der Spektren der Proben zeigte sich, dass sich die Maxima der Bestrahlungsstärke unterschiedlicher Spannungen stark veränderte. In Abbildung \ref{fig:Verschiebung} ist die deutliche Abweichung von den Messungen bei den Spannungen $U$~=~9~V und $U$~=~8~V zu erkennen. Auch bei $U$~=~5~V zeigt sich eine Abweichung zu den Maxima der anderen Spannungen.
+
+Dieses Verhalten ist bei Messungen aller Proben zu beobachten. Die Spannungen bei denen die Abweichungen der Maxima auftreten, sind zufällig verteilt.
+
+Da das Emissionsspektrum der hergestellten Proben Materialabhängig ist und von der Energiedifferenz zwischen HOMO und LUMO abhängt ist eine solche Änderung des Spektrums physikalisch nicht sinnvoll.  Es wird daher angenommen, dass diese Messungen fehlerhaft sind.
+\begin{figure}%
+\centering
+\includegraphics[width=.6\columnwidth]{Grafiken/Verschiebung.pdf}%
+\caption[OLED1: Bestrahlungsstärkespektrum]{Die Abbildung zeigt die Bestrahlungsstärke  der Probe OLED1 in Abhängigkeit von der Wellenlänge. Für unterschiedliche OLED-Betriebsspannungen liegen die Maxima der Bestrahlungsstärke bei unterschiedlichen Wellenlängen. Spannungswerte bei denen es zur Aussteuerung des Messsystems kam sind ausgeblendet.
+}%
+\label{fig:Verschiebung}%
+\end{figure}
+
+%
+%Verschiebeung der Spektren
+%	Unterschiedliche Spannungen - unterschiedliche Proben
+%	
+%
+%Fehlen einzelner Spektren bei bestimmten Spannungswerten
+%	Kontaktprobleme?
+%	
+%
+%---> entsprechender Spannungswert nicht auswertbar
+
+Beim Betrachten der Bestrahlungsstärke der hergestellten Proben zeigt sich ein Aussteuern des Messsystems. Eine Verringerung der Integrationszeit von 30~ms auf 10~ms ermöglichte eine Aussteuerfreie Messung bis zu einer Spannung von $U~\approx~5~$V. Bei höheren Spannungen war die Bestrahlung durch die hergestellten OLEDs zu hoch. Abbildung \ref{fig:Aussteuern} zeigt das Aussteuern ab einer Spannung von 5,5~V.
+
+Aufgrund der aufgetretene Messfehler ist eine Auswerung der Messdaten nur eingeschränkt möglich. Eine Auswertung der aus dem Spektrum abgeleiteten Größen, bei Spannungen, die die beschriebenen Fehler aufweisen, ist nicht sinnvoll. 
 
 
+\begin{figure}%
+\centering
+\includegraphics[width=.6\columnwidth]{Grafiken/Aussteuern.pdf}%
+\caption[OLED8: Aussteuerung des Messsystems]{Die Abbildung zeigt die Bestrahlungsstärke der Probe OLED8 in Abhängigkeit von der Wellenlänge bei OLED-Betriebsspannungen von 4~V bis 6,5~V. Ein Aussteuern des Messsystems ist ab einer Spannung von 5,5~V erkennbar.}%
+\label{fig:Aussteuern}%
+\end{figure}
 
-Verschiebeung der Spektren
-	Unterschiedliche Spannungen - unterschiedliche Proben
+%Aussteuerung des Sensor bei ~5 V
+%	- reduzierung von tintegration von 30 auf 10 ms
+%	- wartezeit zw. 2 messungen: 1 s 
+%	hat nix gebracht
+%
+%-> Werte oberhalt 5 V nicht verwertbar
+%
+%
+%Evtl. 4 und 7 verschrtauscht
+%
+%
+%OLED6 ist scheiße!
+%	a.) Nicht die dünnste, sondern die Dickste, weil zu lange gewartet vor Spin-Coating: -> Angedrocknet: eher unwarscheinlich
+%	
+%	b.) Probleme mit der Kontaktierung -> dadurch viel höherer Wdstd. bzw. garkeine messung!
+%	
 	
-
-Fehlen einzelner Spektren bei bestimmten Spannungswerten
-	Kontaktprobleme?
-	
-
----> entsprechender Spannungswert nicht auswertbar
-
-
-
-
-Aussteuerung des Sensor bei ~5 V
-	- reduzierung von tintegration von 30 auf 10 ms
-	- wartezeit zw. 2 messungen: 1 s 
-	hat nix gebracht
-
--> Werte oberhalt 5 V nicht verwertbar
-
-
-Evtl. 4 und 7 verschrtauscht
-
-
-OLED6 ist scheiße!
-	a.) Nicht die dünnste, sondern die Dickste, weil zu lange gewartet vor Spin-Coating: -> Angedrocknet: eher unwarscheinlich
-	
-	b.) Probleme mit der Kontaktierung -> dadurch viel höherer Wdstd. bzw. garkeine messung!
-	
-	
-\subsection{Auswahl von Ausreisern}
-\label{ch:Messung:sec:Fehler:sub:Bewertung}
 
 
 \section{Stromdichte/Spannung-Kennlinien}
 \label{ch:Messung:sec:jU}
 %Anhand von Stromdichte/Spannungs ($j/U$)-Kennlinen lässt sich die Stromdichte in Abhängigkeit der angelegten Spannung über die OLED
+OLEDs zeigen beim betrachten der Stromdichte/Spannung ($j/U$)-Kennline \todo{in weiten bereichen} eine typische Diodenkennlinie. Bis zu einer Spannung von 2,5~V ist kein Stromfluss zu beobachten. Mit steigender Spannung steigt die Stromdichte exponentiell an. Abbildung \ref{fig:jUPEDOT} zeigt dieses Verhalten Anhand einiger Messungen. Die Grenzspannung ist hier bei 2.5~V zu erkennen, ab der die zuv
+
+
+
 a.) Typischer diodenkennlinienverlauf
 		Kein Stromfluss bis ~3 V
 		OLED1: Ohmscher Anteil darunter
