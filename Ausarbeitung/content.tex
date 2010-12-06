@@ -157,6 +157,7 @@ Aufgrund der aufgetretene Messfehler ist eine Auswerung der Messdaten nur einges
 OLEDs zeigen beim betrachten der Stromdichte/Spannung ($j/U$)-Kennline Ähnlichkeit zu einer Diodenkennlinie. Abbildung \ref{fig:jUPEDOT} zeigt dieses Verhalten Anhand einiger Messungen. Bis zu einer Spannung von 2,5~V ist kein Stromfluss zu beobachten. Die Verschiebung der Potentiale durch die angelegte Spannung reicht noch nicht aus um Ladungsträger zu injizieren (vgl. \ref{ch:Grundlagen:sec:Injektion}). 
 
 Ab der Grenzspannung U$_\mathrm{G}~\approx~$3~V ist bei Erhöhung der Spannung ein exponentieller Anstieg der Stromdichte zu beobachten. Ab U$_\mathrm{G}~\approx~$8~V flachen die Kurven ab. Die Begrenzung des Stroms ist zum einen durch die Besetzung der Zustände an der Grenzfläche zu den Elektroden zu erklären \todo{ref}. Zum anderen ist auf Grund der geringen Beweglichkeit eine hohe Ladungsträgerdichte erforderlich um hohe Stromdichten zu erreichen. Die hohe Ladungsträgerdichte erzeugt jedoch eine Raumladungszone die den Stromfluss begrenzt \cite{SCD}.   
+Bei einer weiteren erhöhung der Spannung wäre eine Zerstörung der OLEDs zu erwarten. Bei hohen Stromdichten droht eine Überhitzung der organischen Schicht, was zu einer Degradation dieser führt und die Lebensdauer der Leuchtdiode stark verkürzt. 
 
 \begin{figure}%
 \centering
@@ -164,6 +165,16 @@ Ab der Grenzspannung U$_\mathrm{G}~\approx~$3~V ist bei Erhöhung der Spannung ei
 \caption{}%
 \label{}%
 \end{figure}
+
+Anhand Abbildung \ref{fig:jUPedot_sub} soll nun die Auswirkung einer PEDOT:PSS Schicht als Injektionsschicht auf die hergestellten Proben untersucht werden. OLED1 und OLED2 weißen keine PEDOT:PSS Schicht auf, OLED3 und OLED7 haben eine $\sim$18~nm dicke PEDOT:PSS Schicht. Auf alle vier Proben wurden $\sim$60~nm dicke "`Super Yellow"' aufgebracht (vgl. \todo{ref auf Tabelle}).
+In Abbildung \ref{fig:jUPEDOT_ausschnitt} ist die Stromdichte der vier Proben über der Spannung im Bereich von 0~-~4~V zu erkennen. Ab 3~V sind bei allen Proben Ströme zu messen. Eine Veränderung der Grenzspannung $U_{\mathrm{G}}$ durch den Einsatz von PEDOT:PSS ist nicht zu beobachten. Bei der Probe OLED7 steigt die Stromdichte oberhalb von  $U_{\mathrm{G}}$ wesentlich schneller an, als bei den Proben ohne PEDOT:PSS. Da die Stromdichte von OLED3 im Spannungsbereich von 0~-~4~V aber langsamer als die anderen Proben ansteigt, kann keine Aussage über den Einfluss von PEDOT:PSS auf die Stromdichte in diesem Spannungsbereich gemacht werden.
+
+Beim Betrachten von \ref{fig:jUPEDOT} zeigt sich, dass beide Proben mit PEDOT:PSS bei Spannungen $U~>~6$~V eine höhere Stromdichte aufweißen, als die Proben ohne. Die vergleichsweise höhere Stromdichte lässt sich auf die erleichterte Injektion von Ladungsträgern durch die PEDOT:PSS-Schicht zurückführen.
+ 
+Elschner $et al.$ zeigen in \cite{Elschner}, dass neben einer erhöhten Stromdichte durch den Einsatz von PEDOT:PSS auch die Leuchtdichte erhöht wird. Abbildung \ref{fig:PEDOT_Leuchtdichte} zeigt das Verhalten der Leuchtdichte der vier Proben in Abhängigkeit von der Spannung. Auch die Leuchtdichte fängt erst ab der Grenzspannung $U_{\mathrm{G}}$ an zu steigen. Zunächst nimmt die Leuchtdichte exponentiell mit der Spannung zu. Bei OLED1 und OLED2 zeigt sich bei hohen Spannungswerten eine Abnahme der Leuchtdichte. Hieraus folgt, dass die Leuchtdichte für OLED1 und OLED2 im untersuchten Bereich ein Maximum zwischen den Messwerten hat.
+Aufgrund der Aussteuerung des Messystems (vgl. Abschnitt \ref{ch:Messung:sec:Fehler}) sind die gemessenen Werte der Leuchtdichte bei OLED3 und OLED7 nicht verwendbar. Allerdings kann man anhand der Breite der Spektren bei hohen Spannungswerten ein Abnehmen der Leuchtdichte annehmen.
+
+Der Anstieg der Leuchtdichte mit steigender Spannung lässt sich durch eine steigende Anzahl von Ladungsträgern und damit eine erhöhte Wahrscheinlichkeit zur Excitonenbildung und damit zur strahlenden Rekombination. Ab einer bestimmten Spannung kann eine Abnahme der Leuchtdichte beobachtet werden. Durch hohe Felder könnten die Ladungsträger sehr schnell durch die Emissionszone beschleunigt werden und in die Elektroden gelangen. Damit verringert sich die Wahrscheinlichkeit zur strahlenden Rekombination.
 
 
 %a.) Typischer diodenkennlinienverlauf
@@ -196,13 +207,17 @@ Ab der Grenzspannung U$_\mathrm{G}~\approx~$3~V ist bei Erhöhung der Spannung ei
 	\subfloat[$U$ = 0 - 10 V]{\includegraphics[width=.58\columnwidth]{Grafiken/jU_PEDOT.pdf} \label{fig:jUPEDOT}}%
 	\end{adjustwidth}
 \caption[j/U-Kennlinien: OLED mit und ohne PEDOT:PSS]{Auswirkung von PEDOT:PSS auf $j/U$-Kennlinien: OLED1, OLED2 ohne PEDOT:PSS, OLED3, OLED7 mit PEDOT:PSS. \textbf{(a)} bla \textbf{(b)} bla}%
-\label{fig:jUPedot_mit}%
+\label{fig:jUPedot_sub}%
 \end{figure}
 
 
+\begin{figure}%
+\centering
+\includegraphics[width=.6\columnwidth]{Grafiken/PEDOT_Leuchtdichte.pdf}%
+\caption{}%
+\label{fig:PEDOT_Leuchtdichte}%
+\end{figure}
 
-
-- Sättigung bei Stromdichte von ~800 mA/cm$^2$
 
 \section{Spannungsabhängigkeit des Spektrums}
 \label{ch:Messung:sec:Spektrum}
