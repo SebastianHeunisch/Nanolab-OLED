@@ -96,7 +96,7 @@ Die Aufzeichnung der Messdaten erfolgte an einem Computer mit dem Programm "`\te
 \label{ch:Messung:sec:Fehler}
 Bei der Durchführung der Messungen traten verschiedene Effekte auf, die so nicht zu erwarten waren und auf einen Fehler im Messsystem hindeuten. 
 
-Bei der Aufzeichnung der Spektren der Proben zeigte sich, dass sich die Maxima der Bestrahlungsstärke unterschiedlicher Spannungen stark veränderte. In Abbildung \ref{fig:Verschiebung} ist die deutliche Abweichung von den Messungen bei den Spannungen $U$~=~9~V (braun) und $U$~=~8~V (hellblau?) \todo{die 3 blautöne sin etwas ungeschickt) zu erkennen. Auch bei $U$~=~5~V (grün) zeigt sich eine Abweichung zu den Maxima der anderen Spannungen.
+Bei der Aufzeichnung der Spektren der Proben zeigte sich, dass sich die Maxima der Bestrahlungsstärke unterschiedlicher Spannungen stark veränderte. In Abbildung \ref{fig:Verschiebung} ist die deutliche Abweichung von den Messungen bei den Spannungen $U$~=~9~V (braun) und $U$~=~8~V (hellblau?) \todo{die 3 blautöne sin etwas ungeschickt} zu erkennen. Auch bei $U$~=~5~V (grün) zeigt sich eine Abweichung zu den Maxima der anderen Spannungen.
 
 Dieses Verhalten ist bei Messungen aller Proben zu beobachten. Die Spannungen bei denen die Abweichungen der Maxima auftreten, sind zufällig verteilt.
 
@@ -166,15 +166,33 @@ Bei einer weiteren erhöhung der Spannung wäre eine Zerstörung der OLEDs zu erwar
 \label{}%
 \end{figure}
 
-Anhand Abbildung \ref{fig:jUPedot_sub} soll nun die Auswirkung einer PEDOT:PSS Schicht als Injektionsschicht auf die hergestellten Proben untersucht werden. OLED1 und OLED2 weißen keine PEDOT:PSS Schicht auf, OLED3 und OLED7 haben eine $\sim$18~nm dicke PEDOT:PSS Schicht. Auf alle vier Proben wurden $\sim$60~nm dicke "`Super Yellow"' aufgebracht (vgl. \todo{ref auf Tabelle}).
-In Abbildung \ref{fig:jUPEDOT_ausschnitt} ist die Stromdichte der vier Proben über der Spannung im Bereich von 0~-~4~V zu erkennen. Ab 3~V sind bei allen Proben Ströme zu messen. Eine Veränderung der Grenzspannung $U_{\mathrm{G}}$ durch den Einsatz von PEDOT:PSS ist nicht zu beobachten. Bei der Probe OLED7 steigt die Stromdichte oberhalb von  $U_{\mathrm{G}}$ wesentlich schneller an, als bei den Proben ohne PEDOT:PSS. Da die Stromdichte von OLED3 im Spannungsbereich von 0~-~4~V aber langsamer als die anderen Proben ansteigt, kann keine Aussage über den Einfluss von PEDOT:PSS auf die Stromdichte in diesem Spannungsbereich gemacht werden.
-
-Beim Betrachten von \ref{fig:jUPEDOT} zeigt sich, dass beide Proben mit PEDOT:PSS bei Spannungen $U~>~6$~V eine höhere Stromdichte aufweißen, als die Proben ohne. Die vergleichsweise höhere Stromdichte lässt sich auf die erleichterte Injektion von Ladungsträgern durch die PEDOT:PSS-Schicht zurückführen.
  
-Elschner $et al.$ zeigen in \cite{Elschner}, dass neben einer erhöhten Stromdichte durch den Einsatz von PEDOT:PSS auch die Leuchtdichte erhöht wird. Abbildung \ref{fig:PEDOT_Leuchtdichte} zeigt das Verhalten der Leuchtdichte der vier Proben in Abhängigkeit von der Spannung. Auch die Leuchtdichte fängt erst ab der Grenzspannung $U_{\mathrm{G}}$ an zu steigen. Zunächst nimmt die Leuchtdichte exponentiell mit der Spannung zu. Bei OLED1 und OLED2 zeigt sich bei hohen Spannungswerten eine Abnahme der Leuchtdichte. Hieraus folgt, dass die Leuchtdichte für OLED1 und OLED2 im untersuchten Bereich ein Maximum zwischen den Messwerten hat.
-Aufgrund der Aussteuerung des Messystems (vgl. Abschnitt \ref{ch:Messung:sec:Fehler}) sind die gemessenen Werte der Leuchtdichte bei OLED3 und OLED7 nicht verwendbar. Allerdings kann man anhand der Breite der Spektren bei hohen Spannungswerten ein Abnehmen der Leuchtdichte annehmen.
+ 
+ 
+ 
+
+
+
+
+\section{Spannungsabhängigkeit des Spektrums}
+\label{ch:Messung:sec:Spektrum}
+
+
+\begin{figure}%
+\centering
+\includegraphics[width=.6\columnwidth]{Grafiken/SpektrumOLED8.pdf}%
+\caption{}%
+\label{fig:OLED8}%
+\end{figure}
+
+Anhand der Messdaten zeigt sich eine Spannungsabhängigkeit des Energiedichtespenktrums. Abbildung \ref{fig:OLED8} veranschaulicht dies. Bei einer Spannung von 2,5~V emittiert die OLED noch keine Strahlung. Mit zunehmender Spannung nimmt die maximale Bestahlungsstärke und auch die Breite des Spektrums zu.
+
+Auch die Leuchtdichte fängt ab der Grenzspannung $U_{\mathrm{G}}$ an zu steigen. Zunächst nimmt die Leuchtdichte exponentiell mit der Spannung zu. Bei OLED1 und OLED2 zeigt sich bei hohen Spannungswerten eine Abnahme der Leuchtdichte. Hieraus folgt, dass die Leuchtdichte für OLED1 und OLED2 im untersuchten Bereich ein Maximum zwischen den Messwerten hat.
+Aufgrund der Aussteuerung des Messystems (vgl. Abschnitt \ref{ch:Messung:sec:Fehler}) sind die gemessenen Werte der Leuchtdichte bei den übrigen OLEDs nicht verwendbar. Allerdings kann man anhand Breite und Höhe der Spektren bei hohen Spannungswerten ein Abnehmen der Leuchtdichte annehmen. In Abbildung \ref{fig:OLED8} ist dies für den Spannungswert $U = 10$~V zu erkennen, der in Höhe und Breite kleiner als das Spektrum bei 9~V ist.
 
 Der Anstieg der Leuchtdichte mit steigender Spannung lässt sich durch eine steigende Anzahl von Ladungsträgern und damit eine erhöhte Wahrscheinlichkeit zur Excitonenbildung und damit zur strahlenden Rekombination. Ab einer bestimmten Spannung kann eine Abnahme der Leuchtdichte beobachtet werden. Durch hohe Felder könnten die Ladungsträger sehr schnell durch die Emissionszone beschleunigt werden und in die Elektroden gelangen. Damit verringert sich die Wahrscheinlichkeit zur strahlenden Rekombination.
+
+Weitergehend kann aus Abbildung \ref{fig:OLED8} abgeleitet werden, dass sich das Maximum der spektralen Bestrahlungsstärke durch eine Erhöhung der Spannung nicht verändert. Dies kann dadurch erklärt werden, dass das Emissionsspektrum vom Abstand zwischen HOMO und LUMO abhängt. Dieser Abstand ist materialabhängig und wird daher nicht durch die Spannung beeinträchtigt.  
 
 
 %a.) Typischer diodenkennlinienverlauf
@@ -199,6 +217,25 @@ Der Anstieg der Leuchtdichte mit steigender Spannung lässt sich durch eine steig
 %
 %
 
+\begin{figure}%
+\centering
+\includegraphics[width=.6\columnwidth]{Grafiken/PEDOT_Leuchtdichte.pdf}%
+\caption[Leuchtdichte/Spannungsdiagramm]{Die Abbildung zeigt die Abhängigkeit der Leuchtdichte von der Spannung. Spannungswerte mit Messfehlern tauchen nicht im Diagramm auf. Ab einer Grenzspannung steigt die Leuchtdichte exponentiell an. Bei hohen Spannungen ist ein abfallen der Leuchtdichte zu erkennen.}%
+\label{fig:PEDOT_Leuchtdichte}%
+\end{figure}
+
+
+
+%
+%- Zunahme der Energiedichte für steigende Spannung
+%	
+%- Ab bestimtmer Spannung sinkt Energiedichte wieder ab
+%   --> bei OLED1+2 leichte verschiebung des Maximums
+%   
+%   
+\section{Einfluss von PEDOT:PSS}
+\label{ch:Messung:sec:PEDOT}
+
 
 \begin{figure}%
 \centering
@@ -206,26 +243,25 @@ Der Anstieg der Leuchtdichte mit steigender Spannung lässt sich durch eine steig
 	\subfloat[$U$ = 0 - 4 V]{\includegraphics[width=.58\columnwidth]{Grafiken/jU_PEDOT_ausschnitt.pdf}\label{fig:jUPEDOT_ausschnitt}}
 	\subfloat[$U$ = 0 - 10 V]{\includegraphics[width=.58\columnwidth]{Grafiken/jU_PEDOT.pdf} \label{fig:jUPEDOT}}%
 	\end{adjustwidth}
-\caption[j/U-Kennlinien: OLED mit und ohne PEDOT:PSS]{Auswirkung von PEDOT:PSS auf $j/U$-Kennlinien: OLED1, OLED2 ohne PEDOT:PSS, OLED3, OLED7 mit PEDOT:PSS. \textbf{(a)} bla \textbf{(b)} bla}%
+\caption[j/U-Kennlinien: OLED mit und ohne PEDOT:PSS]{Auswirkung von PEDOT:PSS auf $j/U$-Kennlinien: OLED1, OLED2 ohne PEDOT:PSS, OLED3, OLED7 mit PEDOT:PSS. \textbf{(a)} Im Ausschnitt der j/U-Kennlinie kann man die Grenzspannung $U_{\mathrm{G}}$ für die gezeigten OLEDs erkennen. \textbf{(b)} Ab der Grenzspanspannung steigt die Stromdichte stark an, bis sie gegen Ende der Kurve abflacht.}%
 \label{fig:jUPedot_sub}%
 \end{figure}
+Bei der Herstellung wurden Proben sowohl mit, als auch ohne PEDOT:PSS hergestellt.
+Anhand Abbildung \ref{fig:jUPedot_sub} soll nun die Auswirkung dieser PEDOT:PSS Schicht als Injektionsschicht auf die hergestellten Proben untersucht werden. OLED1 und OLED2 weißen keine PEDOT:PSS Schicht auf, OLED3 und OLED7 haben eine $\sim$18~nm dicke PEDOT:PSS Schicht. Auf alle vier Proben wurden $\sim$60~nm  "`Super Yellow"' aufgebracht (vgl. \todo{ref auf Tabelle}).
+In Abbildung \ref{fig:jUPEDOT_ausschnitt} ist die Stromdichte der vier Proben über der Spannung im Bereich von 0~-~4~V zu erkennen. Ab 3~V sind bei allen Proben Ströme zu messen. Eine Veränderung der Grenzspannung $U_{\mathrm{G}}$ durch den Einsatz von PEDOT:PSS ist nicht zu beobachten. Bei der Probe OLED7 steigt die Stromdichte oberhalb von  $U_{\mathrm{G}}$ wesentlich schneller an, als bei den Proben ohne PEDOT:PSS. Da die Stromdichte von OLED3 im Spannungsbereich von 0~-~4~V aber langsamer als die anderen Proben ansteigt, kann keine Aussage über den Einfluss von PEDOT:PSS auf die Stromdichte in diesem Spannungsbereich gemacht werden.
+
+Beim Betrachten von \ref{fig:jUPEDOT} zeigt sich, dass beide Proben mit PEDOT:PSS bei Spannungen $U~>~6$~V eine höhere Stromdichte aufweißen, als die Proben ohne. Die vergleichsweise höhere Stromdichte lässt sich auf die erleichterte Injektion von Ladungsträgern durch die PEDOT:PSS-Schicht zurückführen.
 
 
-\begin{figure}%
-\centering
-\includegraphics[width=.6\columnwidth]{Grafiken/PEDOT_Leuchtdichte.pdf}%
-\caption{}%
-\label{fig:PEDOT_Leuchtdichte}%
-\end{figure}
+\section{Auswirkung der Emitterschichtdicke}
+\label{ch:Messung:sec:Dicke}
 
+Bei der Herstellung wurden Proben mit unterschiedlicher Drehzahlen beim Aufbringen der Emitterschicht hergestellt.
+Hieraus resultieren unterschiedliche Schichtdicken. 
+Die Proben OLED3 und OLED7 haben eine Emitterschtdicke von $\sim60$~nm. OLED6 hat eine Emitterschichtdicke zwischen 30~nm und 40~nm. Die Proben OLED4 und OLED8 wurden bei geringer Drehzahl (500~min$^-1$ für 55~s) hergestellt. Daraus folgt eine wesentlich höhere Schichtdicke. Unter der Annahme, dass kein Material von der Probe geschleudert wird, kann eine maximale Schichtdicke abgeschätzt werden. Mit 120 $\upmu$l "`Super Yellow"' folgt damit:
 
-\section{Spannungsabhängigkeit des Spektrums}
-\label{ch:Messung:sec:Spektrum}
-
-- Zunahme der Energiedichte für steigende Spannung
-	
-- Ab bestimtmer Spannung sinkt Energiedichte wieder ab
-   --> bei OLED1+2 leichte verschiebung des Maximums
-
-
-
+\begin{equation}
+d=\frac{V}{A}=\frac{120~\upmu \mathrm{l}}{(16~\mathrm{mm})^2}=4,7~\upmu \mathrm{m}
+\label{eq:dicke}
+\end{equation}
+Die reale Schichtdicke wird allerdings etwas geringer sein. Durch die geringe Drehzahl ist weitergehend mit einer inhomogenen Schicht zu rechnen und auch ein Androcknen des Lackes ist denkbar. 
