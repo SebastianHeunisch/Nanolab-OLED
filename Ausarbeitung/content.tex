@@ -154,31 +154,39 @@ Aufgrund der aufgetretene Messfehler ist eine Auswerung der Messdaten nur einges
 \section{Stromdichte/Spannung-Kennlinien}
 \label{ch:Messung:sec:jU}
 %Anhand von Stromdichte/Spannungs ($j/U$)-Kennlinen lässt sich die Stromdichte in Abhängigkeit der angelegten Spannung über die OLED
-OLEDs zeigen beim betrachten der Stromdichte/Spannung ($j/U$)-Kennline \todo{in weiten bereichen} eine typische Diodenkennlinie. Abbildung \ref{fig:jUPEDOT} zeigt dieses Verhalten Anhand einiger Messungen. Bis zu einer Spannung von 2,5~V ist kein Stromfluss zu beobachten. Ab der Grenzspannung U$_\mathrm{G}~\approx~$3~V ist bei Erhöhung der Spannung ein exponentieller Anstieg der Stromdichte zu beobachten. Ab ungefähr 5~V zeigt sich ein nahezu linearer Verlauf der Stromdichte. Weiter ist zu erkennen, dass ab einer Stromdichte von $\sim750$~mA/cm$^2$ eine Sättigung der Stromdichte auftritt.
+OLEDs zeigen beim betrachten der Stromdichte/Spannung ($j/U$)-Kennline Ähnlichkeit zu einer Diodenkennlinie. Abbildung \ref{fig:jUPEDOT} zeigt dieses Verhalten Anhand einiger Messungen. Bis zu einer Spannung von 2,5~V ist kein Stromfluss zu beobachten. Die Verschiebung der Potentiale durch die angelegte Spannung reicht noch nicht aus um Ladungsträger zu injizieren (vgl. \ref{ch:Grundlagen:sec:Injektion}). 
+
+Ab der Grenzspannung U$_\mathrm{G}~\approx~$3~V ist bei Erhöhung der Spannung ein exponentieller Anstieg der Stromdichte zu beobachten. Ab U$_\mathrm{G}~\approx~$8~V flachen die Kurven ab. Die Begrenzung des Stroms ist zum einen durch die Besetzung der Zustände an der Grenzfläche zu den Elektroden zu erklären \todo{ref}. Zum anderen ist auf Grund der geringen Beweglichkeit eine hohe Ladungsträgerdichte erforderlich um hohe Stromdichten zu erreichen. Die hohe Ladungsträgerdichte erzeugt jedoch eine Raumladungszone die den Stromfluss begrenzt \cite{SCD}.   
+
+\begin{figure}%
+\centering
+\includegraphics[width=.6\columnwidth]{Grafiken/jU-Kennlinie.pdf}%
+\caption{}%
+\label{}%
+\end{figure}
 
 
-
-a.) Typischer diodenkennlinienverlauf
-		Kein Stromfluss bis ~3 V
-		OLED1: Ohmscher Anteil darunter
-		
-		Erklärung für Diodenkennlinie:
-		- Ab dieser spannung "`flachbandfall"' siehe Grundlagen
-		- 
-
-
--  Ohmscher Anteil parellel zur Diode bei OLED1
-
-- Probe OLED1 und OLED2: Geringere Stromdichte als alle anderen
-	Höherer Widerstand
-	Schlechtere Ladungsträgerinjektion in Organik
-	wegen: Fehlendes PEDOT:PSS
-		
-
-
-- 
-
-
+%a.) Typischer diodenkennlinienverlauf
+%		Kein Stromfluss bis ~3 V
+%		OLED1: Ohmscher Anteil darunter
+%		
+%		Erklärung für Diodenkennlinie:
+%		- Ab dieser spannung "`flachbandfall"' siehe Grundlagen
+%		- 
+%
+%
+%-  Ohmscher Anteil parellel zur Diode bei OLED1
+%
+%- Probe OLED1 und OLED2: Geringere Stromdichte als alle anderen
+%	Höherer Widerstand
+%	Schlechtere Ladungsträgerinjektion in Organik
+%	wegen: Fehlendes PEDOT:PSS
+%		
+%
+%
+%- 
+%
+%
 
 
 \begin{figure}%
