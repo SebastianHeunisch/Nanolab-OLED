@@ -132,7 +132,7 @@ Bei der Aufzeichnung der Spektren der Proben zeigte sich, dass sich die Maxima d
 
 Dieses Verhalten ist bei Messungen aller Proben zu beobachten. Die Spannungen bei denen die Abweichungen der Maxima auftreten, sind zufällig verteilt.
 
-Das Emissionsspektrum von OLEDs hängt von der Energiedifferenz zwischen LOMO und HUMO ab. Diese Energiedifferenz hängt hauptsächlich von der Zusammensetzung der Emmisionschicht ab. Eine Änderung des Abstands von LUMO und HOMO mit der angelegten Spannung ist physikalisch nicht sinnvoll. Es wird daher angenommen, dass diese Messungen fehlerhaft sind.
+Dieser Effekt ist physikalisch nicht sinnvoll (vgl. Abschnitt \ref{ch:Messung:sec:Spektrum}) Es wird daher angenommen, dass diese Messungen fehlerhaft sind.
 %\begin{figure}%
 %\centering
 %\includegraphics[width=.6\columnwidth]{Grafiken/Verschiebung.pdf}%
@@ -199,19 +199,11 @@ Aufgrund der aufgetretene Messfehler ist eine Auswerung der Messdaten nur einges
 \end{figure}
 
 %Anhand von Stromdichte/Spannungs ($j/U$)-Kennlinen lässt sich die Stromdichte in Abhängigkeit der angelegten Spannung über die OLED
-OLEDs zeigen beim betrachten der Stromdichte/Spannung ($j/U$)-Kennline Ähnlichkeit zu einer Diodenkennlinie. Abbildung \ref{fig:jUPEDOT} zeigt dieses Verhalten Anhand einiger Messungen. Bis zu einer Spannung von 2,5~V ist kein Stromfluss zu beobachten. Die Verschiebung der Potentiale durch die angelegte Spannung reicht noch nicht aus um Ladungsträger zu injizieren (vgl. \ref{ch:Grundlagen:sec:Injektion}). 
+OLEDs zeigen beim betrachten der Stromdichte/Spannung ($j/U$)-Kennline Ähnlichkeit zu einer Diodenkennlinie. Abbildung \ref{fig:jUPEDOT} zeigt dieses Verhalten Anhand einiger Messungen. Bis zu einer Spannung von 2,5~V ist kein Stromfluss zu beobachten. Die Verschiebung der Potentiale durch die angelegte Spannung reicht noch nicht aus um Ladungsträger zu injizieren (vgl. \ref{ch:Grundlagen:sec:Injektion}). \todo{entweder raus oder noch Grundlagen}
 
-Ab der Grenzspannung U$_\mathrm{G}~\approx~$3~V ist bei Erhöhung der Spannung ein exponentieller Anstieg der Stromdichte zu beobachten. Ab U$_\mathrm{G}~\approx~$8~V flachen die Kurven ab. Die Begrenzung des Stroms ist zum einen durch die Besetzung der Zustände an der Grenzfläche zu den Elektroden zu erklären \todo{ref}. Zum anderen ist auf Grund der geringen Beweglichkeit eine hohe Ladungsträgerdichte erforderlich um hohe Stromdichten zu erreichen. Die hohe Ladungsträgerdichte erzeugt jedoch eine Raumladungszone die den Stromfluss begrenzt \cite{SCD}.   
-Bei einer weiteren erhöhung der Spannung wäre eine Zerstörung der OLEDs zu erwarten. Bei hohen Stromdichten droht eine Überhitzung der organischen Schicht, was zu einer Degradation dieser führt und die Lebensdauer der Leuchtdiode stark verkürzt. 
+Ab der Grenzspannung U$_\mathrm{G}~\approx~$3~V ist bei Erhöhung der Spannung ein exponentieller Anstieg der Stromdichte zu beobachten. Ab U$_\mathrm{G}~\approx~$8~V flachen die Kurven ab. Die Begrenzung des Stroms ist zum einen durch die Besetzung der Zustände an der Grenzfläche zu den Elektroden zu erklären \todo{ref}. Zum anderen ist auf Grund der geringen Beweglichkeit eine hohe Ladungsträgerdichte erforderlich um hohe Stromdichten zu erreichen. Die hohe Ladungsträgerdichte erzeugt jedoch eine Raumladungszone die den Stromfluss begrenzt \cite{SCD}.
 
-
-
- 
- 
- 
- 
-
-
+Bei einer weiteren Erhöhung der Spannung wäre eine Zerstörung der OLEDs zu erwarten. Bei hohen Stromdichten droht eine Überhitzung der organischen Schicht, was zu einer Degradation dieser führt und die Lebensdauer der Leuchtdiode stark verkürzt.
 
 
 \section{Spannungsabhängigkeit des Spektrums}
@@ -238,9 +230,9 @@ Anhand der Messdaten zeigt sich eine Spannungsabhängigkeit des Energiedichtespen
 Auch die Leuchtdichte fängt ab der Grenzspannung $U_{\mathrm{G}}$ an zu steigen. Zunächst nimmt die Leuchtdichte exponentiell mit der Spannung zu. Bei OLED1 und OLED2 zeigt sich bei hohen Spannungswerten eine Abnahme der Leuchtdichte. Hieraus folgt, dass die Leuchtdichte für OLED1 und OLED2 im untersuchten Bereich ein Maximum zwischen den Messwerten hat.
 Aufgrund der Aussteuerung des Messystems (vgl. Abschnitt \ref{ch:Messung:sec:Fehler}) sind die gemessenen Werte der Leuchtdichte bei den übrigen OLEDs nicht verwendbar. Allerdings kann man anhand Breite und Höhe der Spektren bei hohen Spannungswerten ein Abnehmen der Leuchtdichte annehmen. In Abbildung \ref{fig:Aussteuern} ist dies für den Spannungswert $U = 10$~V zu erkennen, der in Höhe und Breite kleiner als das Spektrum bei 9~V ist.
 
-Der Anstieg der Leuchtdichte mit steigender Spannung lässt sich durch eine steigende Anzahl von Ladungsträgern und damit eine erhöhte Wahrscheinlichkeit zur Exzitonenbildung und damit zur strahlenden Rekombination. Ab einer bestimmten Spannung kann eine Abnahme der Leuchtdichte beobachtet werden. Durch hohe Felder könnten die Ladungsträger sehr schnell durch die Emissionszone beschleunigt werden und in die Elektroden gelangen. Damit verringert sich die Wahrscheinlichkeit zur strahlenden Rekombination.
+Durch das erhöhen der Angelegten Spannung erhöht sich auch die Zahl der injizierten Ladungsträger. Hiermit erhöht sich auch die Wahrscheinlichkeit zur Bildung eines Exzitons und damit zur strahlenden Rekombination. Mit weiter steigender Spannung verringert sich die Wahrscheinlichkeit zur Bildung eines Exzitons jedoch wieder, da sich die Ladungsträger durch das höhere Feld auch schneller durch die Emmisionszone bewegen. Außerdem sinkt auch, wie in \ref{ch:Messung:sec:jU} beschrieben, die Zahl der injizierten Ladungsträger ab einer gewissen Spannung.
 
-Weitergehend kann aus Abbildung \ref{fig:Aussteuern} abgeleitet werden, dass sich das Maximum der spektralen Bestrahlungsstärke durch eine Erhöhung der Spannung nicht verändert. Dies kann dadurch erklärt werden, dass das Emissionsspektrum vom Abstand zwischen HOMO und LUMO abhängt. Dieser Abstand ist materialabhängig und wird daher nicht durch die Spannung beeinträchtigt.  
+Weitergehend kann aus Abbildung \ref{fig:Aussteuern} abgeleitet werden, dass sich das Maximum der spektralen Bestrahlungsstärke durch eine Erhöhung der Spannung nicht verändert. Das Emissionsspektrum von OLEDs hängt von der Energiedifferenz zwischen LOMO und HUMO ab. Diese Energiedifferenz hängt hauptsächlich von der Zusammensetzung der Emmisionschicht ab. Eine Änderung des Abstands von LUMO und HOMO mit der angelegten Spannung ist also physikalisch auch nicht sinnvoll.
 
 
 %a.) Typischer diodenkennlinienverlauf
@@ -290,7 +282,7 @@ Weitergehend kann aus Abbildung \ref{fig:Aussteuern} abgeleitet werden, dass sic
 \end{figure}
 Bei der Herstellung wurden Proben sowohl mit, als auch ohne PEDOT:PSS hergestellt.
 Anhand Abbildung \ref{fig:jUPedot_sub} soll nun die Auswirkung dieser PEDOT:PSS Schicht als Injektionsschicht auf die hergestellten Proben untersucht werden. OLED1 und OLED2 weißen keine PEDOT:PSS Schicht auf, OLED3 und OLED7 haben eine $\sim$18~nm dicke PEDOT:PSS Schicht. Auf alle vier Proben wurden $\sim$60~nm  "`Super Yellow"' aufgebracht (vgl. \ref{tab:spin}).
-In Abbildung \ref{fig:jUPEDOT_ausschnitt} ist die Stromdichte der vier Proben über der Spannung im Bereich von 0~-~4~V zu erkennen. Ab 3~V sind bei allen Proben Ströme zu messen. Eine Veränderung der Grenzspannung $U_{\mathrm{G}}$ durch den Einsatz von PEDOT:PSS ist nicht zu beobachten. Bei der Probe OLED7 steigt die Stromdichte oberhalb von  $U_{\mathrm{G}}$ wesentlich schneller an, als bei den Proben ohne PEDOT:PSS. Da die Stromdichte von OLED3 im Spannungsbereich von 0~-~4~V aber langsamer als die anderen Proben ansteigt, kann keine Aussage über den Einfluss von PEDOT:PSS auf die Stromdichte in diesem Spannungsbereich gemacht werden.
+In Abbildung \ref{fig:jUPEDOT_ausschnitt} ist die Stromdichte der vier Proben in Abhängigkeit von der Spannung zwischen 0~V und 4~V zu erkennen. Ab 3~V sind bei allen Proben Ströme zu messen. Eine Veränderung der Grenzspannung $U_{\mathrm{G}}$ durch den Einsatz von PEDOT:PSS ist nicht zu beobachten. Bei der Probe OLED7 steigt die Stromdichte oberhalb von  $U_{\mathrm{G}}$ wesentlich schneller an, als bei den Proben ohne PEDOT:PSS. Da die Stromdichte von OLED3 im Spannungsbereich von 0~-~4~V aber langsamer als die anderen Proben ansteigt, kann keine Aussage über den Einfluss von PEDOT:PSS auf die Stromdichte in diesem Spannungsbereich gemacht werden.
 
 Beim Betrachten von \ref{fig:jUPEDOT} zeigt sich, dass beide Proben mit PEDOT:PSS bei Spannungen $U~>~6$~V eine höhere Stromdichte aufweißen, als die Proben ohne. Die vergleichsweise höhere Stromdichte lässt sich auf die erleichterte Injektion von Ladungsträgern durch die PEDOT:PSS-Schicht zurückführen.
 
@@ -306,7 +298,7 @@ Die Proben OLED3 und OLED7 haben eine Emitterschtdicke von $\sim60$~nm. OLED6 ha
 d=\frac{V}{A}=\frac{120~\upmu \mathrm{l}}{(16~\mathrm{mm})^2}=4,7~\upmu \mathrm{m}
 \label{eq:dicke}
 \end{equation}
-Die reale Schichtdicke wird allerdings etwas geringer sein. Durch die geringe Drehzahl ist weitergehend mit einer inhomogenen Schicht zu rechnen und auch ein Androcknen des Lackes ist denkbar. 
+Die reale Schichtdicke wird allerdings etwas geringer sein. Durch die geringe Drehzahl ist weitergehend mit einer inhomogenen Schicht zu rechnen. Auch ein Antrocknen des Lacks während des Spin-Coatens ist denkbar.
 
 \begin{figure}%
 \centering
@@ -320,15 +312,15 @@ Die reale Schichtdicke wird allerdings etwas geringer sein. Durch die geringe Dr
 \label{fig:SpektrumSchichtdickes}%
 \end{figure}
 
-Anhand Abbildung \ref{fig:SpektrumSchichtdickes} soll nun die Auswirkung unterschiedlicher Dicken der "`Super Yellow"'-Schchicht analysiert werden. Bei einer Spannung von 4,5~V (Abb. \ref{fig:Spektrum4.5}) erkennt man, dass OLED4 und OLED8, die die gleiche Schichtdicke haben, ein nahezu identsiches Spektrum aufweisen. OLED3 und OLED7 hingegen unterscheiden sich stark in der Intensität des Spektrums. Bei allen Proben zeigt sich jedoch, dass das Intensitätsmaximum bei einer Wellenlänge von $\sim$550~nm zu finden ist. Abbildung \ref{fig:Spektrum5} zeigt die spektrale Bestrahlungsstärke bei einer Spannung von 5~V. Bei diesem Spannungswert ist eine auswertbare Messung von OLED6 vorhanden, allerdings steuert OLED7 aus. 
-Auch hier zeigen sich die zuvor beobachteten Intensitätsverhältnisse zwischen den Proben. OLED6 weißt jedoch bei der geringsten Schichtdcke auch die geringste Intensität auf.
-%Die großen Abweichungen zwischen OLED3 und OLED7 könnte zum einen daraus resultieren, dass die Schichtdicke um wenige Nanometer abweicht. Bei geringen Schichtdicken kann eine solche Abweichung einen realtiv große Änderung der Gesamtschichtdicke bedeuten, wogegen bei großen Schichtdicken eine Variation von wenigen Nanometern geringere Auswirkungen erwarten lässt. 
-Die Unterschiede zwischen OLED3 und OLED7 lassen auf Probleme bei der Herstellung von OLED3 schließen. Bei der Herstellung ist allerdings keine Abweichung in den Prozessierungen aufgefallen. 
+Anhand Abbildung \ref{fig:SpektrumSchichtdickes} soll nun die Auswirkung unterschiedlicher Dicken der "`Super Yellow"'-Schchicht analysiert werden. Bei einer Spannung von 4,5~V (Abb. \ref{fig:Spektrum4.5}) erkennt man, dass OLED4 und OLED8, die die gleiche Schichtdicke haben, ein nahezu identsiches Spektrum aufweisen. OLED3 und OLED7 hingegen unterscheiden sich stark in der Intensität des Spektrums. Bei allen Proben zeigt sich jedoch, dass das Intensitätsmaximum bei einer Wellenlänge von $\sim$550~nm zu finden ist. Abbildung \ref{fig:Spektrum5} zeigt die spektrale Bestrahlungsstärke bei einer Spannung von 5~V. Bei diesem Spannungswert ist eine auswertbare Messung von OLED6 vorhanden, allerdings steuert OLED7 aus. Man erkennt jedoch auch, dass OLED4 und OLED8 nahezu die gleiche Intensität haben, sich OLED3 und OLED7 jedoch stark unterscheiden.
 
-OLED6 zeigt die geringste Intensität. Zum einen ist denkbar, dass durch die wesentlich dünnere Schichtdicke auch die Emitterzone dünner ist. Daraus resultiert eine geringe Strahlungsemission. 
-Jedoch ist bei OLED6 im Vergleich zu den anderen Proben ein sehr geringe Stromfluss durch die Probe zu verweisen. Damit befinden sich viel weniger Ladungsträger im Material die zur Exzitonenbildung beitragen können.
-Auch bei OLED6 ist im Herstellungsprozess keine Unregelmäßigkeit aufgefallen. Dennoch lässt sich dies anhand der $j/U$-Kennlinie vermuten (vgl. \ref{ch:Messung:sec:jU}).
-Dicke Schichten scheinen weniger anfällig für Störungen im Herstellungsprozess zu sein, und zeigen eine gute Reproduzierbarkeit der Proben.
+OLED6 weißt bei der geringsten Schichtdcke auch die geringste Intensität auf.
+%Die großen Abweichungen zwischen OLED3 und OLED7 könnte zum einen daraus resultieren, dass die Schichtdicke um wenige Nanometer abweicht. Bei geringen Schichtdicken kann eine solche Abweichung einen realtiv große Änderung der Gesamtschichtdicke bedeuten, wogegen bei großen Schichtdicken eine Variation von wenigen Nanometern geringere Auswirkungen erwarten lässt.
+Zum einen ist denkbar, dass durch die wesentlich dünnere Schichtdicke auch die Emitterzone dünner ist. Daraus resultiert eine geringe Strahlungsemission.
+Jedoch ist bei OLED6 auch zu beachten, dass im Vergleich zu den anderen Proben nur ein sehr geringer Strom durch die Probe fließt. Damit befinden sich viel weniger Ladungsträger im Material die zur Exzitonenbildung beitragen können.
+Eigentlich sollte eine dünne Polymerschicht eine höheren Strom zur Folge haben. Dies steht im Widerspruch zur $j/U$-Kennlinie von OLED6 (vgl. \ref{ch:Messung:sec:jU}).
+
+Dicke Schichten scheinen weniger anfällig für Störungen im Herstellungsprozess zu sein, und zeigen eine gute Reproduzierbarkeit der Proben. Die Unterschiede zwischen OLED3 und OLED7 lassen auf Probleme bei der Herstellung von OLED3 schließen. Bei der Herstellung ist allerdings keine Abweichung in den Prozessierungen aufgefallen. 
 
 
 \chapter{Zusammenfassung}
