@@ -11,8 +11,13 @@
 \section{PEDOT:PSS}
 \label{ch:Grundlagen:sec:PEDOT}
 
-\section{Lichterzeugung}
+\section{Strahlungserzeugung}
 \label{ch:Grundlagen:sec:Lichterzeugung}
+Wie bei anorganischen Halbleitern kommt es bei organischen Halbleiter zur erzeugung von Strahlung durch die Rekombination von negativen (Elektronen) und positiven (Löcher) Ladungsträgern. Anders als beim anorganischen Halbleiter zeigt das Emissionsspektrum von organischen Halbleitern allerdings Strahlung geringerer Energie $W=h\nu$ ($h$: Planksches Wirkungsquantum, $\nu$: Frequenz der emittierten Strahlung) als der energetische Abstand von LUMO und HOMO (beim anorganischen Halbleiter Leitungs- und Valenzband). 
+
+Diese geringere Energie ist ein Resultat der exzitonenbildung im organischen Halbleiter. Kommen sich Elektron und Loch nahe genug, kommt es zu einer Paarbildung der beiden. Elektronen-Loch-Paar kann als  Qausiteilchen betrachtet werden, das aufgrund des Ladungsausgleiches der Elektronen- und Lochladung nach außen neutral ist. An dieser stelle ist zu erwähnen, dass nur ein geringer Anteil der injjezierten Ladungsträger Exzitonen bilden (vgl. \cite{Versuchsanleitung}) und viele Ladungsträger das komplette Bauteil durchlaufen. 
+
+Ein solches Exziton kann strahlend zerfallen. Die freiwerdende Energie entspricht der Energiedifferenz zwischen LUMO und HOMO abzüglich der Bindungsenerigie des Exzitons. Aus diesem Grund ist die abgestrahlte Energie geringer als der energetische Abstand von LUMO und HOMO.
 
 
 
@@ -202,11 +207,11 @@ Bei einer weiteren erhöhung der Spannung wäre eine Zerstörung der OLEDs zu erwar
 Anhand der Messdaten zeigt sich eine Spannungsabhängigkeit des Energiedichtespenktrums. Abbildung \ref{fig:Aussteuern} veranschaulicht dies. Bei einer Spannung von 2,5~V emittiert die OLED noch keine Strahlung. Mit zunehmender Spannung nimmt die maximale Bestahlungsstärke und auch die Breite des Spektrums zu.
 
 Auch die Leuchtdichte fängt ab der Grenzspannung $U_{\mathrm{G}}$ an zu steigen. Zunächst nimmt die Leuchtdichte exponentiell mit der Spannung zu. Bei OLED1 und OLED2 zeigt sich bei hohen Spannungswerten eine Abnahme der Leuchtdichte. Hieraus folgt, dass die Leuchtdichte für OLED1 und OLED2 im untersuchten Bereich ein Maximum zwischen den Messwerten hat.
-Aufgrund der Aussteuerung des Messystems (vgl. Abschnitt \ref{ch:Messung:sec:Fehler}) sind die gemessenen Werte der Leuchtdichte bei den übrigen OLEDs nicht verwendbar. Allerdings kann man anhand Breite und Höhe der Spektren bei hohen Spannungswerten ein Abnehmen der Leuchtdichte annehmen. In Abbildung \ref{fig:OLED8} ist dies für den Spannungswert $U = 10$~V zu erkennen, der in Höhe und Breite kleiner als das Spektrum bei 9~V ist.
+Aufgrund der Aussteuerung des Messystems (vgl. Abschnitt \ref{ch:Messung:sec:Fehler}) sind die gemessenen Werte der Leuchtdichte bei den übrigen OLEDs nicht verwendbar. Allerdings kann man anhand Breite und Höhe der Spektren bei hohen Spannungswerten ein Abnehmen der Leuchtdichte annehmen. In Abbildung \ref{fig:Aussteuern} ist dies für den Spannungswert $U = 10$~V zu erkennen, der in Höhe und Breite kleiner als das Spektrum bei 9~V ist.
 
-Der Anstieg der Leuchtdichte mit steigender Spannung lässt sich durch eine steigende Anzahl von Ladungsträgern und damit eine erhöhte Wahrscheinlichkeit zur Excitonenbildung und damit zur strahlenden Rekombination. Ab einer bestimmten Spannung kann eine Abnahme der Leuchtdichte beobachtet werden. Durch hohe Felder könnten die Ladungsträger sehr schnell durch die Emissionszone beschleunigt werden und in die Elektroden gelangen. Damit verringert sich die Wahrscheinlichkeit zur strahlenden Rekombination.
+Der Anstieg der Leuchtdichte mit steigender Spannung lässt sich durch eine steigende Anzahl von Ladungsträgern und damit eine erhöhte Wahrscheinlichkeit zur Exzitonenbildung und damit zur strahlenden Rekombination. Ab einer bestimmten Spannung kann eine Abnahme der Leuchtdichte beobachtet werden. Durch hohe Felder könnten die Ladungsträger sehr schnell durch die Emissionszone beschleunigt werden und in die Elektroden gelangen. Damit verringert sich die Wahrscheinlichkeit zur strahlenden Rekombination.
 
-Weitergehend kann aus Abbildung \ref{fig:OLED8} abgeleitet werden, dass sich das Maximum der spektralen Bestrahlungsstärke durch eine Erhöhung der Spannung nicht verändert. Dies kann dadurch erklärt werden, dass das Emissionsspektrum vom Abstand zwischen HOMO und LUMO abhängt. Dieser Abstand ist materialabhängig und wird daher nicht durch die Spannung beeinträchtigt.  
+Weitergehend kann aus Abbildung \ref{fig:Aussteuern} abgeleitet werden, dass sich das Maximum der spektralen Bestrahlungsstärke durch eine Erhöhung der Spannung nicht verändert. Dies kann dadurch erklärt werden, dass das Emissionsspektrum vom Abstand zwischen HOMO und LUMO abhängt. Dieser Abstand ist materialabhängig und wird daher nicht durch die Spannung beeinträchtigt.  
 
 
 %a.) Typischer diodenkennlinienverlauf
@@ -298,7 +303,7 @@ Auch hier zeigen sich die zuvor beobachteten Intensitätsverhältnisse zwischen de
 Die Unterschiede zwischen OLED3 und OLED7 lassen auf Probleme bei der Herstellung von OLED3 schließen. Bei der Herstellung ist allerdings keine Abweichung in den Prozessierungen aufgefallen. 
 
 OLED6 zeigt die geringste Intensität. Zum einen ist denkbar, dass durch die wesentlich dünnere Schichtdicke auch die Emitterzone dünner ist. Daraus resultiert eine geringe Strahlungsemission. 
-Jedoch ist bei OLED6 im Vergleich zu den anderen Proben ein sehr geringe Stromfluss durch die Probe zu verweisen. Damit befinden sich viel weniger Ladungsträger im Material die zur Excitonenbildung beitragen können.
+Jedoch ist bei OLED6 im Vergleich zu den anderen Proben ein sehr geringe Stromfluss durch die Probe zu verweisen. Damit befinden sich viel weniger Ladungsträger im Material die zur Exzitonenbildung beitragen können.
 Auch bei OLED6 ist im Herstellungsprozess keine Unregelmäßigkeit aufgefallen. Dennoch lässt sich dies anhand der $j/U$-Kennlinie vermuten (vgl. \ref{ch:Messung:sec:jU}).
 Dicke Schichten scheinen weniger anfällig für Störungen im Herstellungsprozess zu sein, und zeigen eine gute Reproduzierbarkeit der Proben.
 
