@@ -162,8 +162,8 @@ Bei einer weiteren erhöhung der Spannung wäre eine Zerstörung der OLEDs zu erwar
 \begin{figure}%
 \centering
 \includegraphics[width=.6\columnwidth]{Grafiken/jU-Kennlinie.pdf}%
-\caption{}%
-\label{}%
+\caption{j/U-Kennlinien aller hergestellter Proben. Ab einer Grenzspannung $U_{\mathrm{G}}$ nimmt der Strom exponentiell mit der Spannung zu wachsen. Gegen 10~V ist das Eintreten einer Sättigung zu erkennen. Die Stromdichte von OLED6 wächst zu beginn auch exponentiell an, ist aber ungefähr eine Größenordnung kleiner als die der anderen Proben.}%
+\label{fig:jU-Kennlinie}%
 \end{figure}
 
  
@@ -181,7 +181,7 @@ Bei einer weiteren erhöhung der Spannung wäre eine Zerstörung der OLEDs zu erwar
 \begin{figure}%
 \centering
 \includegraphics[width=.6\columnwidth]{Grafiken/SpektrumOLED8.pdf}%
-\caption{}%
+\caption[Fehlerhafte Messungen: Aussteuerung bei hohen Spannungen]{Ab einer gewissen Spannung ist die Bestrahlung durch die OLED so groß, dass es zu einer Aussteuerung des Messsystems kommt. Bei der gezeigten OLED8 tritt dieser Effekt ab $U$~=~6~V auf.}%
 \label{fig:OLED8}%
 \end{figure}
 
@@ -265,3 +265,15 @@ d=\frac{V}{A}=\frac{120~\upmu \mathrm{l}}{(16~\mathrm{mm})^2}=4,7~\upmu \mathrm{
 \label{eq:dicke}
 \end{equation}
 Die reale Schichtdicke wird allerdings etwas geringer sein. Durch die geringe Drehzahl ist weitergehend mit einer inhomogenen Schicht zu rechnen und auch ein Androcknen des Lackes ist denkbar. 
+
+\begin{figure}%
+\centering
+\begin{adjustwidth}{-1.1cm}{0cm}
+	\subfloat[$U$ = 4,5~V]{\includegraphics[width=.58\columnwidth]{Grafiken/Spektrum_45V.pdf}\label{fig:Spektrum4.5}}
+	\subfloat[$U$ = 5~V]{\includegraphics[width=.58\columnwidth]{Grafiken/Spektrum_5V.pdf} \label{fig:Spektrum5}}%
+	\end{adjustwidth}
+\caption[Spektren unter Variation der SY-Dicke]{
+ Spektren der Bestrahlungsstärke für unterschiedlichen Schichtdicken der Emissionsschicht. \textbf{(a)} Bei einer Spannung von 4,5~V sind keine fehlerfreie Messwerte von OLED6 vorhanden. 
+ \textbf{(b)} Bei einer Spannung von 5~V kommt es zu einem Aussteuern des Messystems bei OLED7.}%
+\label{fig:SpektrumSchichtdickes}%
+\end{figure}
