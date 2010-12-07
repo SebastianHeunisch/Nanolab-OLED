@@ -101,13 +101,27 @@ Bei der Aufzeichnung der Spektren der Proben zeigte sich, dass sich die Maxima d
 Dieses Verhalten ist bei Messungen aller Proben zu beobachten. Die Spannungen bei denen die Abweichungen der Maxima auftreten, sind zufällig verteilt.
 
 Da das Emissionsspektrum der hergestellten Proben Materialabhängig ist und von der Energiedifferenz zwischen HOMO und LUMO abhängt ist eine solche Änderung des Spektrums physikalisch nicht sinnvoll.  Es wird daher angenommen, dass diese Messungen fehlerhaft sind.
+%\begin{figure}%
+%\centering
+%\includegraphics[width=.6\columnwidth]{Grafiken/Verschiebung.pdf}%
+%\caption[OLED1: Bestrahlungsstärkespektrum]{Die Abbildung zeigt die Bestrahlungsstärke  der Probe OLED1 in Abhängigkeit von der Wellenlänge. Für unterschiedliche OLED-Betriebsspannungen liegen die Maxima der Bestrahlungsstärke bei unterschiedlichen Wellenlängen. Spannungswerte bei denen es zur Aussteuerung des Messsystems kam sind ausgeblendet.
+%}%
+%\label{fig:Verschiebung}%
+%\end{figure}
+
+
 \begin{figure}%
 \centering
-\includegraphics[width=.6\columnwidth]{Grafiken/Verschiebung.pdf}%
-\caption[OLED1: Bestrahlungsstärkespektrum]{Die Abbildung zeigt die Bestrahlungsstärke  der Probe OLED1 in Abhängigkeit von der Wellenlänge. Für unterschiedliche OLED-Betriebsspannungen liegen die Maxima der Bestrahlungsstärke bei unterschiedlichen Wellenlängen. Spannungswerte bei denen es zur Aussteuerung des Messsystems kam sind ausgeblendet.
-}%
-\label{fig:Verschiebung}%
+\begin{adjustwidth}{-1.1cm}{0cm}
+	\subfloat[Verschiebung von Spektren]{\includegraphics[width=.59\columnwidth]{Grafiken/Verschiebung.pdf}\label{fig:Verschiebung}}
+	\subfloat[Aussteuerung des Messsystems]{\includegraphics[width=.59\columnwidth]{Grafiken/SpektrumOLED8.pdf} \label{fig:Aussteuern}}%
+	\end{adjustwidth}
+\caption[Fehler im Spektrum]{Spektrale Bestrahlungsstärke in Abhängigkeit von der Spannung \textbf{(a)} Für unterschiedliche Spannungen liegen die Maxima der Bestrahlungsstärke bei unterschiedlichen Wellenlängen. Spannungwerte bei denen es zur Aussteuerung des Messsystems kam sind ausgeblendet. \textbf{(b)} Ab einer Spannung von 5,5~V steuert das Messsystem aus.}%
+\label{fig:Fehler}%
 \end{figure}
+
+
+
 
 %
 %Verschiebeung der Spektren
@@ -125,12 +139,12 @@ Beim Betrachten der Bestrahlungsstärke der hergestellten Proben zeigt sich ein A
 Aufgrund der aufgetretene Messfehler ist eine Auswerung der Messdaten nur eingeschränkt möglich. Eine Auswertung der aus dem Spektrum abgeleiteten Größen, bei Spannungen, die die beschriebenen Fehler aufweisen, ist nicht sinnvoll. 
 
 
-\begin{figure}%
-\centering
-\includegraphics[width=.6\columnwidth]{Grafiken/Aussteuern.pdf}%
-\caption[OLED8: Aussteuerung des Messsystems]{Die Abbildung zeigt die Bestrahlungsstärke der Probe OLED8 in Abhängigkeit von der Wellenlänge bei OLED-Betriebsspannungen von 4~V bis 6,5~V. Ein Aussteuern des Messsystems ist ab einer Spannung von 5,5~V erkennbar.}%
-\label{fig:Aussteuern}%
-\end{figure}
+%\begin{figure}%
+%\centering
+%\includegraphics[width=.6\columnwidth]{Grafiken/Aussteuern.pdf}%
+%\caption[OLED8: Aussteuerung des Messsystems]{Die Abbildung zeigt die Bestrahlungsstärke der Probe OLED8 in Abhängigkeit von der Wellenlänge bei OLED-Betriebsspannungen von 4~V bis 6,5~V. Ein Aussteuern des Messsystems ist ab einer Spannung von 5,5~V erkennbar.}%
+%\label{fig:Aussteuern}%
+%\end{figure}
 
 %Aussteuerung des Sensor bei ~5 V
 %	- reduzierung von tintegration von 30 auf 10 ms
@@ -178,14 +192,14 @@ Bei einer weiteren erhöhung der Spannung wäre eine Zerstörung der OLEDs zu erwar
 \label{ch:Messung:sec:Spektrum}
 
 
-\begin{figure}%
-\centering
-\includegraphics[width=.6\columnwidth]{Grafiken/SpektrumOLED8.pdf}%
-\caption[Fehlerhafte Messungen: Aussteuerung bei hohen Spannungen]{Ab einer gewissen Spannung ist die Bestrahlung durch die OLED so groß, dass es zu einer Aussteuerung des Messsystems kommt. Bei der gezeigten OLED8 tritt dieser Effekt ab $U$~=~6~V auf.}%
-\label{fig:OLED8}%
-\end{figure}
+%\begin{figure}%
+%\centering
+%\includegraphics[width=.6\columnwidth]{Grafiken/SpektrumOLED8.pdf}%
+%\caption[Fehlerhafte Messungen: Aussteuerung bei hohen Spannungen]{Ab einer gewissen Spannung ist die Bestrahlung durch die OLED so groß, dass es zu einer Aussteuerung des Messsystems kommt. Bei der gezeigten OLED8 tritt dieser Effekt ab $U$~=~6~V auf.}%
+%\label{fig:OLED8}%
+%\end{figure}
 
-Anhand der Messdaten zeigt sich eine Spannungsabhängigkeit des Energiedichtespenktrums. Abbildung \ref{fig:OLED8} veranschaulicht dies. Bei einer Spannung von 2,5~V emittiert die OLED noch keine Strahlung. Mit zunehmender Spannung nimmt die maximale Bestahlungsstärke und auch die Breite des Spektrums zu.
+Anhand der Messdaten zeigt sich eine Spannungsabhängigkeit des Energiedichtespenktrums. Abbildung \ref{fig:Aussteuern} veranschaulicht dies. Bei einer Spannung von 2,5~V emittiert die OLED noch keine Strahlung. Mit zunehmender Spannung nimmt die maximale Bestahlungsstärke und auch die Breite des Spektrums zu.
 
 Auch die Leuchtdichte fängt ab der Grenzspannung $U_{\mathrm{G}}$ an zu steigen. Zunächst nimmt die Leuchtdichte exponentiell mit der Spannung zu. Bei OLED1 und OLED2 zeigt sich bei hohen Spannungswerten eine Abnahme der Leuchtdichte. Hieraus folgt, dass die Leuchtdichte für OLED1 und OLED2 im untersuchten Bereich ein Maximum zwischen den Messwerten hat.
 Aufgrund der Aussteuerung des Messystems (vgl. Abschnitt \ref{ch:Messung:sec:Fehler}) sind die gemessenen Werte der Leuchtdichte bei den übrigen OLEDs nicht verwendbar. Allerdings kann man anhand Breite und Höhe der Spektren bei hohen Spannungswerten ein Abnehmen der Leuchtdichte annehmen. In Abbildung \ref{fig:OLED8} ist dies für den Spannungswert $U = 10$~V zu erkennen, der in Höhe und Breite kleiner als das Spektrum bei 9~V ist.
