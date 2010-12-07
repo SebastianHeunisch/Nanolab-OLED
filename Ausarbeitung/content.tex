@@ -106,9 +106,9 @@ Abbildung \ref{fig:OLED_Schema} zeigt den schematischen Aufbau der hergestellten
 
 Die Charakterisierung der OLEDs wurde, ebenfalls in Stickstoffatmosphäre, in einem "`\textit{Organic Characterisation System}"' (OCS) durchgeführt. Die Proben wurden zunächst in einen Rahmen gelegt, der in eine Halterung des OCS gesteckt wurde. Zur Kontaktierung der OLEDs werden nun Kontaktstifte an die Proben gedrückt. Die Steuerung des OCS und die Aufnahme der Messdaten erfolgt durch das Programm "`\textit{kennlinie.exe}"'.  Durch das Anlegen einer Spannung von 3~V wurden die OLEDs nun auf Funktionsfähigkeit überprüft. Die augenscheinlich Bessere der beiden auf einer Probe vorhandenen OLEDs wurde im Folgenden analysiert.
 
-Zunächst wurde die zu untersuchende OLED mit Hilfe eines Lasers mittig ausgerichtet. Nach dem schließen der Abdeckung am OCS wurde nun die Automatisierte Messung gestartet. Bei der Messung wird die OLED aus der Ladeposition zu einem Spektrometer hin gedreht.
+Zunächst wurde die zu untersuchende OLED mit Hilfe eines Lasers mittig ausgerichtet. Nach dem Schließen der Abdeckung am OCS wurde nun die Automatisierte Messung gestartet. Bei der Messung wird die OLED aus der Ladeposition zu einem Spektrometer hin gedreht.
 
-Die Aufzeichnung der Messdaten erfolgte ebenfalls mit dem Programm "`\textit{kennlinie.exe}"'. Zur Messung wurde ein Spannungsbereich von 0 - 10~V eingestellt, der in 0,5~V Schritten durchlaufen wurde. Für die Spektroskopie wurde ein Wellenlängenbereich von 300 - 800~nm gewählt, die in Schritten von 1~nm durchlaufen wurden. Die Integrationszeit des Sensors betrug 10~ms.
+Die Aufzeichnung der Messdaten erfolgte ebenfalls mit dem Programm "`\textit{kennlinie.exe}"'. Zur Messung wurde ein Spannungsbereich von 0 - 10~V eingestellt, der in 0,5~V Schritten durchlaufen wurde. Für die Spektroskopie wurde ein Wellenlängenbereich von 300 - 800~nm gewählt, welcher in Schritten von 1~nm durchlaufen wurden. Die Integrationszeit des Sensors betrug 10~ms.
 
 
 \chapter{Auswertung der Messergebnisse}
@@ -118,7 +118,7 @@ Die Aufzeichnung der Messdaten erfolgte ebenfalls mit dem Programm "`\textit{ken
 \centering
 \begin{adjustwidth}{-1.1cm}{0cm}
 	\subfloat[Verschiebung von Spektren]{\includegraphics[width=.59\columnwidth]{Grafiken/Verschiebung.pdf}\label{fig:Verschiebung}}
-	\subfloat[Aussteuerung des Messsystems]{\includegraphics[width=.59\columnwidth]{Grafiken/SpektrumOLED8.pdf} \label{fig:Aussteuern}}%
+	\subfloat[Aussteuerung des Messsystems]{\includegraphics[width=.59\columnwidth]{Grafiken/Aussteuern.pdf} \label{fig:Aussteuern}}%
 	\end{adjustwidth}
 \caption[Fehler im Spektrum]{Spektrale Bestrahlungsstärke in Abhängigkeit von der Spannung \textbf{(a)} Für unterschiedliche Spannungen liegen die Maxima der Bestrahlungsstärke bei unterschiedlichen Wellenlängen. Spannungwerte bei denen es zur Aussteuerung des Messsystems kam sind ausgeblendet. \textbf{(b)} Ab einer Spannung von 5,5~V steuert das Messsystem aus.}%
 \label{fig:Fehler}%
@@ -128,7 +128,7 @@ Die Aufzeichnung der Messdaten erfolgte ebenfalls mit dem Programm "`\textit{ken
 \label{ch:Messung:sec:Fehler}
 Bei der Durchführung der Messungen traten verschiedene Effekte auf, die so nicht zu erwarten waren und auf einen Fehler im Messsystem hindeuten. 
 
-Bei der Aufzeichnung der Spektren der Proben zeigte sich, dass sich die Maxima der Bestrahlungsstärke unterschiedlicher Spannungen stark veränderte. In Abbildung \ref{fig:Verschiebung} ist die deutliche Abweichung von den Messungen bei den Spannungen $U=9$~V (braun) und $U=8$~V (hellblau) \todo{die 3 blautöne sin etwas ungeschickt} zu erkennen. Auch bei $U=5$~V (grün) zeigt sich eine Abweichung zu den Maxima der anderen Spannungen.
+Bei der Aufzeichnung der Spektren der Proben zeigte sich, dass sich die Maxima der Bestrahlungsstärke unterschiedlicher Spannungen stark veränderte. In Abbildung \ref{fig:Verschiebung} ist die deutliche Abweichung von den Messungen bei den Spannungen $U=8$~V (braun) und $U=7$~V (gelb) zu erkennen. Auch bei $U=5$~V (cyan) zeigt sich eine Abweichung zu den Maxima der anderen Spannungen.
 
 Dieses Verhalten ist bei Messungen aller Proben zu beobachten. Die Spannungen bei denen die Abweichungen der Maxima auftreten, sind zufällig verteilt.
 
@@ -159,7 +159,7 @@ Dieser Effekt ist physikalisch nicht sinnvoll (vgl. Abschnitt \ref{ch:Messung:se
 
 Beim Betrachten der Bestrahlungsstärke der hergestellten Proben zeigt sich ein Aussteuern des Messsystems. Eine Verringerung der Integrationszeit von 30~ms auf 10~ms ermöglichte eine Aussteuerfreie Messung bis zu einer Spannung von $U~\approx~5~$V. Bei höheren Spannungen war die Bestrahlung durch die hergestellten OLEDs zu hoch. Abbildung \ref{fig:Aussteuern} zeigt das Aussteuern ab einer Spannung von 5,5~V.
 
-Aufgrund der aufgetretene Messfehler ist eine Auswerung der Messdaten nur eingeschränkt möglich. Eine Auswertung der aus dem Spektrum abgeleiteten Größen, bei Spannungen, die die beschriebenen Fehler aufweisen, ist nicht sinnvoll. 
+Aufgrund der aufgetreten Messfehler ist eine Auswerung der Messdaten nur eingeschränkt möglich. Eine Auswertung der aus dem Spektrum abgeleiteten Größen, bei Spannungen, die die beschriebenen Fehler aufweisen, ist nicht sinnvoll. 
 
 
 %\begin{figure}%
@@ -194,17 +194,18 @@ Aufgrund der aufgetretene Messfehler ist eine Auswerung der Messdaten nur einges
 \begin{figure}%
 \centering
 \includegraphics[width=.6\columnwidth]{Grafiken/jU-Kennlinie.pdf}%
-\caption{j/U-Kennlinien aller hergestellter Proben. Ab einer Grenzspannung $U_{\mathrm{G}}$ nimmt der Strom exponentiell mit der Spannung zu wachsen. Gegen 10~V ist das Eintreten einer Sättigung zu erkennen. Die Stromdichte von OLED6 wächst zu beginn auch exponentiell an, ist aber ungefähr eine Größenordnung kleiner als die der anderen Proben.}%
+\caption{j/U-Kennlinien aller hergestellter Proben. Ab einer Grenzspannung $U_{\mathrm{G}}$ nimmt der Strom exponentiell mit der Spannung zu. Gegen 10~V ist das Eintreten einer Sättigung zu erkennen. Die Stromdichte von OLED6 wächst zu beginn auch exponentiell an, ist aber ungefähr eine Größenordnung kleiner als die der anderen Proben.}%
 \label{fig:jU-Kennlinie}%
 \end{figure}
 
 %Anhand von Stromdichte/Spannungs ($j/U$)-Kennlinen lässt sich die Stromdichte in Abhängigkeit der angelegten Spannung über die OLED
-OLEDs zeigen beim betrachten der Stromdichte/Spannung ($j/U$)-Kennline Ähnlichkeit zu einer Diodenkennlinie. Abbildung \ref{fig:jUPEDOT} zeigt dieses Verhalten Anhand einiger Messungen. Bis zu einer Spannung von 2,5~V ist kein Stromfluss zu beobachten. Die Verschiebung der Potentiale durch die angelegte Spannung reicht noch nicht aus um Ladungsträger zu injizieren (vgl. \ref{ch:Grundlagen:sec:Injektion}). \todo{entweder raus oder noch Grundlagen}
+OLEDs zeigen beim betrachten der Stromdichte/Spannung ($j/U$)-Kennline Ähnlichkeit zu einer Diodenkennlinie. Abbildung \ref{fig:jUPEDOT} zeigt dieses Verhalten Anhand einiger Messungen. Bis zu einer Spannung von 2,5~V ist kein Stromfluss zu beobachten. Die Verschiebung der Potentiale durch die angelegte Spannung reicht noch nicht aus um Ladungsträger zu injizieren.% (vgl. \ref{ch:Grundlagen:sec:Injektion}). \todo{entweder raus oder noch Grundlagen}
 
 Ab der Grenzspannung U$_\mathrm{G}~\approx~$3~V ist bei Erhöhung der Spannung ein exponentieller Anstieg der Stromdichte zu beobachten. Ab U$_\mathrm{G}~\approx~$8~V flachen die Kurven ab. Die Begrenzung des Stroms ist zum einen durch die Besetzung der Zustände an der Grenzfläche zu den Elektroden zu erklären \todo{ref}. Zum anderen ist auf Grund der geringen Beweglichkeit eine hohe Ladungsträgerdichte erforderlich um hohe Stromdichten zu erreichen. Die hohe Ladungsträgerdichte erzeugt jedoch eine Raumladungszone die den Stromfluss begrenzt \cite{SCD}.
 
 Bei einer weiteren Erhöhung der Spannung wäre eine Zerstörung der OLEDs zu erwarten. Bei hohen Stromdichten droht eine Überhitzung der organischen Schicht, was zu einer Degradation dieser führt und die Lebensdauer der Leuchtdiode stark verkürzt.
 
+OLED6 zeigt bis zu einer Spannung von 6~V einen den anderen Proben ähnlichen Verlauf der Stromdichte, ist aber im gesamten Bereich ungefähr eine Größenordnung kleiner. Ab 6~V bleibt die Stromdichte nahezu konstant und bricht ab 9 Volt ein. Es ist von Kontaktproblemen oder von einem Defekt der Probe auszugehen.
 
 \section{Spannungsabhängigkeit des Spektrums}
 \label{ch:Messung:sec:Spektrum}
@@ -230,7 +231,7 @@ Anhand der Messdaten zeigt sich eine Spannungsabhängigkeit des Energiedichtespen
 Auch die Leuchtdichte fängt ab der Grenzspannung $U_{\mathrm{G}}$ an zu steigen. Zunächst nimmt die Leuchtdichte exponentiell mit der Spannung zu. Bei OLED1 und OLED2 zeigt sich bei hohen Spannungswerten eine Abnahme der Leuchtdichte. Hieraus folgt, dass die Leuchtdichte für OLED1 und OLED2 im untersuchten Bereich ein Maximum zwischen den Messwerten hat.
 Aufgrund der Aussteuerung des Messystems (vgl. Abschnitt \ref{ch:Messung:sec:Fehler}) sind die gemessenen Werte der Leuchtdichte bei den übrigen OLEDs nicht verwendbar. Allerdings kann man anhand Breite und Höhe der Spektren bei hohen Spannungswerten ein Abnehmen der Leuchtdichte annehmen. In Abbildung \ref{fig:Aussteuern} ist dies für den Spannungswert $U = 10$~V zu erkennen, der in Höhe und Breite kleiner als das Spektrum bei 9~V ist.
 
-Durch das erhöhen der Angelegten Spannung erhöht sich auch die Zahl der injizierten Ladungsträger. Hiermit erhöht sich auch die Wahrscheinlichkeit zur Bildung eines Exzitons und damit zur strahlenden Rekombination. Mit weiter steigender Spannung verringert sich die Wahrscheinlichkeit zur Bildung eines Exzitons jedoch wieder, da sich die Ladungsträger durch das höhere Feld auch schneller durch die Emmisionszone bewegen. Außerdem sinkt auch, wie in \ref{ch:Messung:sec:jU} beschrieben, die Zahl der injizierten Ladungsträger ab einer gewissen Spannung.
+Durch das erhöhen der Angelegten Spannung erhöht sich auch die Zahl der injizierten Ladungsträger. Hiermit erhöht sich auch die Wahrscheinlichkeit zur Bildung eines Exzitons und damit zur strahlenden Rekombination. Mit weiter steigender Spannung verringert sich die Wahrscheinlichkeit zur Bildung eines Exzitons jedoch wieder, da sich die Ladungsträger durch das höhere Feld auch schneller durch die Emmisionszone bewegen.% Außerdem sinkt auch, wie in \ref{ch:Messung:sec:jU} beschrieben, die Zahl der injizierten Ladungsträger ab einer gewissen Spannung.
 
 Weitergehend kann aus Abbildung \ref{fig:Aussteuern} abgeleitet werden, dass sich das Maximum der spektralen Bestrahlungsstärke durch eine Erhöhung der Spannung nicht verändert. Das Emissionsspektrum von OLEDs hängt von der Energiedifferenz zwischen LOMO und HUMO ab. Diese Energiedifferenz hängt hauptsächlich von der Zusammensetzung der Emmisionschicht ab. Eine Änderung des Abstands von LUMO und HOMO mit der angelegten Spannung ist also physikalisch auch nicht sinnvoll.
 
@@ -281,7 +282,7 @@ Weitergehend kann aus Abbildung \ref{fig:Aussteuern} abgeleitet werden, dass sic
 \label{fig:jUPedot_sub}%
 \end{figure}
 Bei der Herstellung wurden Proben sowohl mit, als auch ohne PEDOT:PSS hergestellt.
-Anhand Abbildung \ref{fig:jUPedot_sub} soll nun die Auswirkung dieser PEDOT:PSS Schicht als Injektionsschicht auf die hergestellten Proben untersucht werden. OLED1 und OLED2 weißen keine PEDOT:PSS Schicht auf, OLED3 und OLED7 haben eine $\sim$18~nm dicke PEDOT:PSS Schicht. Auf alle vier Proben wurden $\sim$60~nm  "`Super Yellow"' aufgebracht (vgl. \ref{tab:spin}).
+Anhand Abbildung \ref{fig:jUPedot_sub} soll nun die Auswirkung dieser PEDOT:PSS-Schicht als Injektionsschicht auf die hergestellten Proben untersucht werden. OLED1 und OLED2 weißen keine PEDOT:PSS-Schicht auf, OLED3 und OLED7 haben eine $\sim$18~nm dicke PEDOT:PSS-Schicht. Auf alle vier Proben wurden $\sim$60~nm  "`Super Yellow"' aufgebracht (vgl. Tabelle \ref{tab:spin}).
 In Abbildung \ref{fig:jUPEDOT_ausschnitt} ist die Stromdichte der vier Proben in Abhängigkeit von der Spannung zwischen 0~V und 4~V zu erkennen. Ab 3~V sind bei allen Proben Ströme zu messen. Eine Veränderung der Grenzspannung $U_{\mathrm{G}}$ durch den Einsatz von PEDOT:PSS ist nicht zu beobachten. Bei der Probe OLED7 steigt die Stromdichte oberhalb von  $U_{\mathrm{G}}$ wesentlich schneller an, als bei den Proben ohne PEDOT:PSS. Da die Stromdichte von OLED3 im Spannungsbereich von 0~-~4~V aber langsamer als die anderen Proben ansteigt, kann keine Aussage über den Einfluss von PEDOT:PSS auf die Stromdichte in diesem Spannungsbereich gemacht werden.
 
 Beim Betrachten von \ref{fig:jUPEDOT} zeigt sich, dass beide Proben mit PEDOT:PSS bei Spannungen $U~>~6$~V eine höhere Stromdichte aufweißen, als die Proben ohne. Die vergleichsweise höhere Stromdichte lässt sich auf die erleichterte Injektion von Ladungsträgern durch die PEDOT:PSS-Schicht zurückführen.
@@ -292,7 +293,7 @@ Beim Betrachten von \ref{fig:jUPEDOT} zeigt sich, dass beide Proben mit PEDOT:PS
 
 Bei der Herstellung wurden Proben mit unterschiedlicher Drehzahlen beim Aufbringen der Emitterschicht hergestellt.
 Hieraus resultieren unterschiedliche Schichtdicken. 
-Die Proben OLED3 und OLED7 haben eine Emitterschtdicke von $\sim60$~nm. OLED6 hat eine Emitterschichtdicke zwischen 30~nm und 40~nm. Die Proben OLED4 und OLED8 wurden bei geringer Drehzahl (500~min$^-1$ für 55~s) hergestellt. Daraus folgt eine wesentlich höhere Schichtdicke. Unter der Annahme, dass kein Material von der Probe geschleudert wird, kann eine maximale Schichtdicke abgeschätzt werden. Mit 120 $\upmu$l "`Super Yellow"' folgt damit:
+Die Proben OLED3 und OLED7 haben eine Emitterschtdicke von $\sim60$~nm. OLED6 hat eine Emitterschichtdicke zwischen 30~nm und 40~nm. Die Proben OLED4 und OLED8 wurden bei geringer Drehzahl (500~min$^{-1}$ für 55~s) hergestellt. Daraus folgt eine wesentlich höhere Schichtdicke. Unter der Annahme, dass kein Material von der Probe geschleudert wird, kann eine maximale Schichtdicke abgeschätzt werden. Mit 120 $\upmu$l "`Super Yellow"' folgt damit:
 
 \begin{equation}
 d=\frac{V}{A}=\frac{120~\upmu \mathrm{l}}{(16~\mathrm{mm})^2}=4,7~\upmu \mathrm{m}
@@ -318,20 +319,20 @@ OLED6 weißt bei der geringsten Schichtdcke auch die geringste Intensität auf.
 %Die großen Abweichungen zwischen OLED3 und OLED7 könnte zum einen daraus resultieren, dass die Schichtdicke um wenige Nanometer abweicht. Bei geringen Schichtdicken kann eine solche Abweichung einen realtiv große Änderung der Gesamtschichtdicke bedeuten, wogegen bei großen Schichtdicken eine Variation von wenigen Nanometern geringere Auswirkungen erwarten lässt.
 Zum einen ist denkbar, dass durch die wesentlich dünnere Schichtdicke auch die Emitterzone dünner ist. Daraus resultiert eine geringe Strahlungsemission.
 Jedoch ist bei OLED6 auch zu beachten, dass im Vergleich zu den anderen Proben nur ein sehr geringer Strom durch die Probe fließt. Damit befinden sich viel weniger Ladungsträger im Material die zur Exzitonenbildung beitragen können.
-Eigentlich sollte eine dünne Polymerschicht eine höheren Strom zur Folge haben. Dies steht im Widerspruch zur $j/U$-Kennlinie von OLED6 (vgl. \ref{ch:Messung:sec:jU}).
+Eigentlich sollte eine dünne Polymerschicht eine höheren Strom zur Folge haben. Dies steht im Widerspruch zur $j/U$-Kennlinie von OLED6 (vgl. Abschnitt \ref{ch:Messung:sec:jU}).
 
 Dicke Schichten scheinen weniger anfällig für Störungen im Herstellungsprozess zu sein, und zeigen eine gute Reproduzierbarkeit der Proben. Die Unterschiede zwischen OLED3 und OLED7 lassen auf Probleme bei der Herstellung von OLED3 schließen. Bei der Herstellung ist allerdings keine Abweichung in den Prozessierungen aufgefallen. 
 
 
 \chapter{Zusammenfassung}
 \label{ch:Zusammenfassung}
-Im Versuch "`Organische Leuchtdioden"' im Rahmen des Labors Nanotechnologie am Lichttechnischen Institut (LTI) wurden organische Leuchtdioden hergestellt und charakterisiert. Die Herstellung erfolgte in den Reinräumen des LTIs. Hier konnte das Arbeiten unter reinraumbedingungen kennengelernt werden.
+Im Versuch "`Organische Leuchtdioden"' im Rahmen des Labors Nanotechnologie am Lichttechnischen Institut (LTI) wurden organische Leuchtdioden hergestellt und charakterisiert. Die Herstellung erfolgte in den Reinräumen des LTIs. Hier konnte das Arbeiten unter Reinraumbedingungen kennengelernt werden.
 %
 %Die Empfindlichkeit der verwendeten verwendeten Materialien erfordete das Arbeiten bei Stickstoffumgebung in Glove-Boxen. Durch die sehr dicken Handschuhe der Glove-Box erschwerten sich auch einfachere Handgriffe. Die empfindlichen Materialien forderten hohe Konzentration und Gründlichkeit beim Herstellen der Leuchtdioden.
  
 Es wurden acht Proben auf denen jeweils zwei Leuchtdioden waren hergestellt. Es wurden vier verschiedene Prozessierungen vorgenommen. Es wurde zum einen Proben mit, als auch ohne Lochinjektionsschicht (PEDOT:PSS) hergestellt. Auch die Schichtdicke des Emittermaterials ("`Super Yellow"') wurde variiert. 
 
-Die hergestellten Proben wurden anschließend am "`Organic Characterisation System"' (OCS) vermessen. Hier wurde sowohl das Bestrahlungsstärkespektrum als auch der Stromdichte-Spannungsverlauf der Leuchtdioden aufgezeichnet. Anhand dieser Messdaten erfolgte die Charakterisierung der Proben.
+Die hergestellten Proben wurden anschließend am "`\textit{Organic Characterisation System}"' (OCS) vermessen. Hier wurde sowohl das Bestrahlungsstärkespektrum als auch der Stromdichte-Spannungsverlauf der Leuchtdioden aufgezeichnet. Anhand dieser Messdaten erfolgte die Charakterisierung der Proben.
 Es konnten Auswirkungen der PEDOT:PSS Schicht beobachtet werden. Unter Verwendung von PEDOT:PSS konnten durch eine leichtere Lochinjektion höhere Stromdichten erreicht werden.
 Aus einer Erhöhung der Spannung resultierte eine höhere Stromdichte sowie eine höhere Strahlungsintensität. Eine Verschiebung des Spektrums durch Variation der Spannung konnte nicht beobachtet werden.
 
