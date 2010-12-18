@@ -6,13 +6,13 @@
 \label{ch:Grundlagen}
 %% ==============
 Im Folgenden sollen die für den Versuch notwendigen Grundlagen von OLEDs erläutert werden. Die Erklärung soll nur einen kurzen Überblick über die Funktionsweiße bieten und berücksichtigt auch nur die im Versuch hergestellten Polymer-OLEDs. Für eine detailliertere  Beschreibung der Theorie sei auf \cite{PE} und \cite{Grundlagen} verwiesen.
-\section{Ladungsträgertransport}
+\section{Organische Halbleiter in OLEDs}
 \label{ch:Grundlagen:sec:Injektion}
-Durch die Bindung von Atomen in einer Polymerkette werden Molekülorbitale ausgebildet. Bei diesen Molekülorbitalen handelt es sich um energetische Zustände. Elektronen besetzen ohne äußere Anregung die energetisch günstigsten Zustände. Wird ein Elektron aus dem höchsten besetzten Molekülorbital (engl. \textit{Highest Ocupied Molecule Orbital} - HOMO) in das niedrigste unbesetzte Molekülorbital  (engl. \textit{Lowest Unocupied Molecule Orbital} - LUMO) angehoben, kann es in das LUMO einer benachbarten Polymerkette wechseln. Analog können Löcher dann vom HOMO einer Kette in eine andere wechseln. Der Ladungsträgertransport in Polymeren erfolgt somit durch den Übergang von Elektronen bzw. Löchern zwischen den Molekülorbitalen der einzelnen Polymerketten. Die LUMO- bzw. HOMO-Niveaus der Polymere lassen sich somit mit dem Leitungs- bzw. Valenzband eines Anorganischen Halbleiters vergleichen. Da sich die Energieniveaus der einzelnen Ketten leicht unterscheiden, sind die Bandgrenzen kein Energiezustand, sondern lediglich eine Ansammlung an Zuständen \cite{PE}.
+Durch die Bindung von Atomen in einer Polymerkette werden Molekülorbitale ausgebildet. Bei diesen Molekülorbitalen handelt es sich um energetische Zustände. Elektronen besetzen ohne äußere Anregung die energetisch günstigsten Zustände. Wird ein Elektron aus dem höchsten besetzten Molekülorbital (engl. \textit{Highest Ocupied Molecule Orbital} - HOMO) in das niedrigste unbesetzte Molekülorbital  (engl. \textit{Lowest Unocupied Molecule Orbital} - LUMO) angehoben, kann es in das LUMO einer benachbarten Polymerkette hüpfen (engl. \textit{hopping}). Analog können Löcher dann vom HOMO einer Kette in eine andere wechseln. Der Ladungsträgertransport in Polymeren erfolgt somit durch den Übergang von Elektronen bzw. Löchern zwischen den Molekülorbitalen der einzelnen Polymerketten. Die LUMO- bzw. HOMO-Niveaus der Polymere lassen sich somit mit dem Leitungs- bzw. Valenzband eines Anorganischen Halbleiters vergleichen. Da sich die Energieniveaus der einzelnen Ketten leicht unterscheiden, sind die Bandgrenzen kein Energiezustand, sondern lediglich eine Ansammlung an Zuständen \cite{PE}.
 
 Um Elektronen in das Polymer zu injizieren muss die Austrittsarbeit der Elektroden überwunden werden. Die Austrittsarbeit ist daher der Abstand des Ferminiveaus vom LUMO-Niveau des Polymers. Dem entsprechend muss die Kathode eine geringe Austrittsarbeit besitzen um die Elektroneninjektion zu erleichtern. Analog muss die Anode eine hohe Austrittsarbeit haben, um die Löcherinjektion zu begünstigen. Im Versuch wurde als Katode eine Calcium-/Aluminiumschicht und als Anode Indiumzinnoxid (ITO) verwendet.
 
-Ladungsträger können von den Elektroden entweder thermisch oder durch tunneln in die Polymerschicht gelangen. Durch ein Elektronen- bzw. Lochtransportlayer kann die Injektion von Ladungsträgern begünstigt werden \cite{Versuchsanleitung}. Im Versuch wurde \mbox{PEDOT:PSS} als Lochtransportlayer (engl. \textit{Hole Transport Layer} - HTL) verwendet.
+Ladungsträger können von den Elektroden entweder thermisch oder durch tunneln in die Polymerschicht gelangen. Durch eine Elektronen- bzw. Lochinjektionsschicht kann die Injektion von Ladungsträgern begünstigt werden \cite{Versuchsanleitung}. Im Versuch wurde \mbox{PEDOT:PSS} als Lochinjektionsschicht (engl. \textit{Hole Injection Layer} - HIL) verwendet.
 % \label{ch:Grundlagen:sec:PEDOT}
 
 \section{Strahlungserzeugung}
@@ -36,24 +36,26 @@ Da sich HOMO und LUMO benachbarter Ketten unterscheiden, unterscheiden sich auch
 \chapter{Versuchsdurchführung}
 \section{Herstellung}
 \label{ch:Herstellung}
-Als Ausgangsmaterial für die im Praktikum hergestellten OLEDs wurde Glas\-substrat verwendet, das mit einer 120 nm dicken Schicht Indiumzinnoxid (engl. \textit{indium tin oxide} - ITO) beschichtet ist. Aus diesem Substrat wurden mit einem Glasschneider zunächst 8 16~x~16~mm$^2$ große Proben geschnitten. Nun wurde 3/4 der Probenfläche mit einem Klebestreifen abgeklebt und anschließend 7~min in ein Bad aus 37~\%iger Salzsäure gegeben, das mit einer Spatelspitze Zinkpulver versetzt wurde. Hierdurch wird das ITO im nicht abgeklebten Bereich weggeätzt. Dieser Bereich dient später zur Kontaktierung der Kathode. Nach dem Ätzprozess wurden die Proben mit Wasser abgespühlt und der Klebestreifen abgezogen. Die beschriebene Vorbereitung der Proben wurde im Vorfeld des Versuchs durch Tobias Bocksrocker durchgeführt.
+Als Ausgangsmaterial für die im Praktikum hergestellten OLEDs wurde Glas\-substrat verwendet, das mit einer 120 nm dicken Schicht Indiumzinnoxid (engl. \textit{indium tin oxide} - ITO) beschichtet ist. Aus diesem Substrat wurden mit einem Glasschneider zunächst 8 16~x~16~mm$^2$ große Proben geschnitten. Nun wurde 3/4 der Probenfläche mit einem Klebestreifen abgeklebt und anschließend 7~min in ein Bad aus 37~\%iger Salzsäure gegeben, das mit einer Spatelspitze Zinkpulver versetzt wurde. Hierdurch wird das ITO im nicht abgeklebten Bereich weggeätzt. Dieser Bereich dient später zur Kontaktierung der Kathode. Nach dem Ätzprozess wurden die Proben mit Wasser abgespühlt und der Klebestreifen abgezogen. Die beschriebene Vorbereitung der Proben wurde im Vorfeld des Versuchs durch den Laborbetreuer durchgeführt.
 
-Die Proben wurden nun in einem mit Aceton gefüllten Becherglas für 10~min in ein Ultraschallbad gestellt. Danach wurden die Proben aus dem Aceton genommen und in Isopropanol weitere 10~min mit Ultraschall gereinigt. Durch die Reinigung mit Aceton werden Fette und Schmutz von der Oberfläche der Proben gelöst. Im Isopropanol lösen sich weitere Rückstände, die sich in Aceton nicht lösen. Außerdem werden durch das Isopropanol auch Acetonreste gelöst. Nach der Reinigung durch Isopropanol wurden die Proben mit Stickstoff trockengeblasen und anschließend für 2~min in einen Plasmaverascher gelegt. Hierin sind die Proben einem Sauerstoffplasma ausgesetzt. Die darin enthaltenen Sauerstoffradikale führen zum einen dazu, dass organische Reste auf der Oberfläche verbrennen. Zum anderen lagern sich auch Sauerstoffatome an der Oberfläche des ITO an. Diese sogenannte Aktivierung führt dazu, dass die Oberfläche polar wird, und sich somit polare Lösungen auf der Oberfläche besser verteilen. Außerdem wird auch die Austrittsarbeit des ITO erhöht. Nach dem Plasmaveraschen wurden die Proben mit einem wasserfesten Folienstift auf der Glasseite durchnummeriert, damit sie im Folgenden unterscheidbar sind.
+Die Proben wurden nun in einem mit Aceton gefüllten Becherglas für 10~min in ein Ultraschallbad gestellt. Danach wurden die Proben aus dem Aceton genommen und in Isopropanol weitere 10~min mit Ultraschall gereinigt. Durch die Reinigung mit Aceton werden Fette und Schmutz von der Oberfläche der Proben gelöst. Im Isopropanol lösen sich weitere Rückstände, die sich in Aceton nicht lösen. Außerdem werden durch das Isopropanol auch Acetonreste gelöst. Nach der Reinigung durch Isopropanol wurden die Proben mit Stickstoff trockengeblasen und anschließend für 2~min in einen Plasmaverascher gelegt. Hierin sind die Proben einem Sauerstoffplasma ausgesetzt. Die darin enthaltenen Sauerstoffradikale führen zum Einen dazu, dass organische Reste auf der Oberfläche verbrennen. Zum Anderen lagern sich auch Sauerstoffatome an der Oberfläche des ITO an. Diese sogenannte Aktivierung führt dazu, dass die Oberfläche polar wird, und sich somit polare Lösungen auf der Oberfläche besser verteilen. Außerdem wird auch die Austrittsarbeit des ITO erhöht.
+%  Nach dem Plasmaveraschen wurden die Proben mit einem wasserfesten Folienstift auf der Glasseite durchnummeriert, damit sie im Folgenden unterscheidbar sind.
 
-Als nächstes wurde eine PEDOT:PSS-Wasser-Lösung im Verhältnis 1:1 hergestellt. Hierzu wurden zunächst 750~$\upmu$l PEDOT:PSS mit einem Membranfilter gefiltert und anschließend 750~$\upmu$l Reinstwasser hinzugegeben. Um die Lösung zu durchmischen und Polymerklumpen zu vermeiden, wird die Lösung in ein Ultraschallbad mit niedriger Leistung (110~W) gegeben. Die Polymerlösung "`Super Yellow"' wurde bereits einen Tag vorher von Tobias Bocksrocker hergestellt, da diese mindestens 24~h zum durchmischen benötigt. \newpage
+Als nächstes wurde eine PEDOT:PSS-Wasser-Lösung im Verhältnis 1:1 hergestellt. Hierzu wurden zunächst 750~$\upmu$l PEDOT:PSS mit einem Membranfilter gefiltert und anschließend 750~$\upmu$l Reinstwasser hinzugegeben. Um die Lösung zu durchmischen und Polymerklumpen zu vermeiden, wird die Lösung in ein Ultraschallbad mit niedriger Leistung (110~W) gegeben. Die Polymerlösung "`Super Yellow"' wurde bereits einen Tag vorher vom Laborbetreuer hergestellt, da diese mindestens 24~h zum lösen benötigt. \newpage
 
-Die Proben wurden nun zusammen mit der PEDOT:PSS-Lösung in eine Glove-Box mit Stickstoffatmosphäre geschleust. Hierzu wurde die Schleusenkammer dreimal evakuiert und mit Stickstoff geflutet um zu vermeiden, dass Sauerstoff mit in die Glove-Box geschleust wird. Die Stickstoffatmosphäre ist notwendig, da das Polymer "`Super Yellow"' Sauerstoffempfindlich ist. Nun wurde per Spin-Coating eine Schicht aus PEDOT:PSS aufgebracht. Hierzu wurden mit einer Luftpolsterpipette 150~$\upmu$l PEDOT:PSS-Lösung gleichmäßig auf dem Substrat verteilt. Das Substrat wurde durch ein Vakuum auf dem Drehteller des Spin-Coaters gehalten.
+Die Proben wurden nun zusammen mit der PEDOT:PSS-Lösung in eine Glove-Box mit Stickstoffatmosphäre geschleust.
+%  Hierzu wurde die Schleusenkammer dreimal evakuiert und mit Stickstoff geflutet um zu vermeiden, dass Sauerstoff mit in die Glove-Box geschleust wird.
+Die Stickstoffatmosphäre ist notwendig, da das Polymer "`Super Yellow"' Sauerstoffempfindlich ist. Nun wurde per Spin-Coating eine Schicht aus PEDOT:PSS aufgebracht. Hierzu wurden mit einer Luftpolsterpipette 150~$\upmu$l PEDOT:PSS-Lösung gleichmäßig auf dem Substrat verteilt. Das Substrat wurde durch ein Vakuum auf dem Drehteller des Spin-Coaters gehalten.
 % Um die PEDOT:PSS-Lösung weiter auf dem Substrat zu verteilen wurde die Probe für 5 Sekunden mit 500 Umdrehungen pro Minuten im Spin-Coater \todo{gedreht}. Um die gewünschte Schichtdicke der Lösung von $\sim18$~nm zu erhalten, wurde die Probe anschließend für 100 Sekunden mit 4000 Umdrehungen pro Minute \todo{gedreht}.
 Nach einem Spin-Coating-Vorlauf von 5~s bei 500 Umdrehungen pro Minuten wurde die Probe 100 Sekunden mit 4000 Umdrehungen pro Minute rotiert. Hierdurch wird die überflüssige Lösung von der Probe geschleudert und es ergibt sich eine ca. 18~nm dicke PEDOT:PSS-Schicht.
 % Die Proben 1 und 2 wurden nicht mit PEDOT:PSS beschichtet.
 
-Um das Lösungsmittel Wasser aus den PEDOT:PSS-Filmen zu Treiben wurden die Proben für 5 Minuten bei 130 °C im Vakuumofen gebacken. Längeres Backen würde zu einer höheren Lebensdauer der hergestellten OLEDs führen, was für den durchgeführten Versuch aber nicht notwendig war.
+Um die Wasserreste aus der PEDOT:PSS-Schicht zu bekommen, wurden die Proben für 5 Minuten bei 130 °C im Vakuumofen gebacken. Längeres Backen würde zu einer höheren Lebensdauer der hergestellten OLEDs führen, was für den durchgeführten Versuch aber nicht notwendig war.
 Nach dem Backen wurden die Proben auf eine Metalloberfläche zum Abkühlen gelegt. Anschließend erfolgte das Auftragen der organischen Emitterschicht. Hierzu wurden 120~$\upmu$l "`Super Yellow"' gleichmäßig auf einer Probe verteilt. Um ein Antrocknen des "`Super Yellows"' musste der Spin-Coating Vorgang möglichst schnell nach dem Aufbringen der Lösung gestartet werden. Tabelle \ref{tab:spin} zeigt die für die jeweiligen Proben verwendeten Prozessparameter.
  
 \begin{table}%
 \centering
 \renewcommand{\arraystretch}{1.3}
-\caption{Herstellungsparameter der Proben. Verwendung von PEDOT:PSS sowie verwendete Spin-Coater Einstellungen beim Auftragen von "`Super Yellow"'.}
 \begin{tabular}{lcccccccc}
 \toprule
 Probennummer 																				& 1		&	2		&	3		&	4		&	5		&	6		&	7		&	8\\
@@ -70,22 +72,23 @@ Bemerkung&&&&&keine&&&\\
 &&&&&Kathode&\\
 \bottomrule 
 \end{tabular}
-
+\caption{Herstellungsparameter der Proben. Verwendung von PEDOT:PSS sowie verwendete Spin-Coater Einstellungen beim Auftragen von "`Super Yellow"'.}
 \label{tab:spin}
 \end{table}
 
 
-Nach dem Aufbringen von "`Super Yellow"' wurden die Proben in einer gasdichten Transportbox aus der zum Spin-Coaten verwendeten Glove-Box zu einer weiteren Glove-Box transportiert, in der sich eine Anlage zur Verdampfung von Materialien befindet. Zusammen mit einer Maske zur Definition der aufzudampfenden Kathoden wurde die Transportbox wie zuvor beschrieben in die Glove-Box geschleust.
+% Nach dem Aufbringen von "`Super Yellow"' wurden die Proben in einer gasdichten Transportbox aus der zum Spin-Coaten verwendeten Glove-Box zu einer weiteren Glove-Box transportiert, in der sich eine Anlage zur Verdampfung von Materialien befindet. Zusammen mit einer Maske zur Definition der aufzudampfenden Kathoden wurde die Transportbox wie zuvor beschrieben in die Glove-Box geschleust.
 
-Die Proben wurden mit Klebeband im Maskenhalter fixiert, und die Maske zur Definition der aufzudampfenden Strukturen darüber positioniert. Daraufhin wurde die Maske mit den Proben in den Rezipienten des Verdampfungsanlage eingebaut, und dieser über ein Vakuumpumpsystem auf einen Basisdruck von $p_{\mathrm{basis}}~\approx~6~\cdot~10^{-7}~$mbar abgepumpt.
+Die Proben wurden mit Klebeband in einem Maskenhalter fixiert, und die Maske zur Definition der aufzudampfenden Strukturen darüber positioniert. Daraufhin wurde die Maske mit den Proben in den Rezipienten einer Verdampfungsanlage eingebaut, und dieser über ein Vakuumpumpsystem auf einen Basisdruck von $p_{\mathrm{basis}}~\approx~6~\cdot~10^{-7}~$mbar abgepumpt.
 
-In der Anlage wird nun ein Wolframtiegel mit Calcium (Ca) langsam durch einen Heizstrom erhitzt. Die Proben sind zunächst noch durch eine Blende geschützt. Das Erhitzten des Ca muss langsam erfolgen, damit es nicht verpufft.
-Die Aufdampfrate in der Anlage wurde durch einen Schwingquarz gemessen, der zuvor auf das verwendete Material kalibriert werden musste. Hierzu wurde die Dichte $\rho_{\mathrm{Ca}}~=~1.55~$g/cm$^3$ eingestellt. Bei einem Strom von $\sim$165~A wurde eine Aufdampfrate von $\sim$1,5$~\mathring{\mathrm{A}}$/s gemessen. Bei rotierendem Probenhalter wurde die Blende geöffnet und ein Ca-Film mit einer Schichtdicke von $d_{\mathrm{Ca}}~=~50~\mathring{\mathrm{A}}$ aufgedampft. Danach wurde die Blende geschlossen. Die Rotation des Probenhalters diente zum Ausgleich von inhomogenem Aufdampfen. 
+In der Anlage wird nun ein Wolframtiegel mit Calcium (Ca) langsam durch einen Heizstrom erhitzt. Die Proben sind zunächst noch durch einen Shutter geschützt. Das Erhitzten des Ca muss langsam erfolgen, damit es nicht verpufft.
+Die Aufdampfrate in der Anlage wurde durch einen Schwingquarz gemessen, der zuvor auf das verwendete Material kalibriert werden musste. Hierzu wurde die Dichte $\rho_{\mathrm{Ca}}~=~1.55~$g/cm$^3$ eingestellt. Bei einem Strom von $\sim$165~A wurde eine Aufdampfrate von $\sim$1,5$~\mathring{\mathrm{A}}$/s gemessen. Bei rotierendem Probenhalter wurde der Shutter geöffnet und eine Ca-Schicht mit einer Dicke von $d_{\mathrm{Ca}}~=~50~\mathring{\mathrm{A}}$ aufgedampft. Danach wurde der Shutter geschlossen. Die Rotation des Probenhalters diente zum Ausgleich von inhomogenem Aufdampfen.
 Anschließend wurde der Tiegel langsam durch Verringerung des Heizstromes abgekühlt. 
 
-Daraufhin wurde ein mit Aluminium (Al) gefüllter Tiegel langsam erhitzt. Hier wurde zur Messung der Aufdampfrate eine Dichte von $\rho_{\mathrm{Al}}~=~2,7~$g/cm$^3$ eingestellt. Bei einem Heizstrom von $\sim260$~A wurde eine Aufdampfrate von $\sim3~\mathring{\mathrm{A}}$/s gemessen. Nach dem Öffnen der Blende wurde unter Rotation des Probenhalters eine Al-Schicht mit einer Schichtdicke von $d_{\mathrm{Al}}~=~200~$nm aufgedampft. Daraufhin wurde die Blende geschlossen und das restliche Al aus dem Tiegel verdampft.
+Daraufhin wurde ein mit Aluminium (Al) gefüllter Tiegel langsam erhitzt. Hier wurde zur Messung der Aufdampfrate eine Dichte von $\rho_{\mathrm{Al}}~=~2,7~$g/cm$^3$ eingestellt. Bei einem Heizstrom von $\sim260$~A wurde eine Aufdampfrate von $\sim3~\mathring{\mathrm{A}}$/s gemessen. Nach dem Öffnen des Shutters wurde unter Rotation des Probenhalters eine Al-Schicht mit einer Dicke von $d_{\mathrm{Al}}~=~200~$nm aufgedampft. Daraufhin wurde der Shutter geschlossen und das restliche Al aus dem Tiegel verdampft.
 
-Nach dem Fluten des Rezipienten mit Stickstoff wurde der Probenhalter aus der Anlage ausgebaut und die Proben in die gasdichte Transportbox gelegt. Die Proben wurden in eine Glove-Box zur Messung und Charakterisierung der hergestellten OLEDs geschleust. Der zum Aufdampfen verwendete Probenhalter und die Maske wurden mit Isopropanol gereinigt. Die Hergestellten Proben konnten nun charakterisiert werden. Allerdings wurde bei OLED5 das Kathodenmaterial auf die falsche Seite der Probe, direkt auf das Glassubstrat, abgeschieden. Die OLED war somit nicht funktionsfähig und konnte nicht weiter zur Charakterisierung verwendet werden.
+% Nach dem Fluten des Rezipienten mit Stickstoff wurde der Probenhalter aus der Anlage ausgebaut und die Proben in die gasdichte Transportbox gelegt. Die Proben wurden in eine Glove-Box zur Messung und Charakterisierung der hergestellten OLEDs geschleust. Der zum Aufdampfen verwendete Probenhalter und die Maske wurden mit Isopropanol gereinigt.
+Die hergestellten Proben konnten nun charakterisiert werden. Bei OLED5 wurde das Kathodenmaterial auf die falsche Seite der Probe, direkt auf das Glassubstrat, abgeschieden. Die OLED war somit nicht funktionsfähig und konnte nicht weiter zur Charakterisierung verwendet werden.
 
 Abbildung \ref{fig:OLED_Schema} zeigt den schematischen Aufbau der hergestellten OLEDs. Abbildung \ref{fig:OLEDOben} zeigt die Ansicht von oben. Zu erkennen sind die zwei zuvor aufgedampften Kathoden aus Ca und Al. Außerdem ist im unteren Bereich der Probe ein heller Streifen zu erkennen. Hier wurde das ITO bei der Herstellung weggeätzt. Beim Betrachten von Abbildung \ref{fig:OLEDSeite} ist der Aufbau der OLED von der Seite und der Schichtaufbau dieser zu erkennen. Der bei Anregung leuchtende Bereich ist durch die Fläche bestimmt, die zwischen Anode (ITO) und Kathode (Al/Ca) liegt. Damit sind bei einer großen Anodenfläche und den zwei aufgedampften Kathodenflächen zwei OLEDs pro Probe vorhanden. 
 
@@ -104,11 +107,12 @@ Abbildung \ref{fig:OLED_Schema} zeigt den schematischen Aufbau der hergestellten
 \section{Durchführung der Messungen}
 \label{ch:Messsystem}
 
-Die Charakterisierung der OLEDs wurde, ebenfalls in Stickstoffatmosphäre, in einem "`\textit{Organic Characterisation System}"' (OCS) durchgeführt. Die Proben wurden zunächst in einen Rahmen gelegt, der in eine Halterung des OCS gesteckt wurde. Zur Kontaktierung der OLEDs werden nun Kontaktstifte an die Proben gedrückt. Die Steuerung des OCS und die Aufnahme der Messdaten erfolgt durch das Programm "`\textit{kennlinie.exe}"'.  Durch das Anlegen einer Spannung von 3~V wurden die OLEDs nun auf Funktionsfähigkeit überprüft. Die augenscheinlich Bessere der beiden auf einer Probe vorhandenen OLEDs wurde im Folgenden analysiert.
+Die Charakterisierung der OLEDs wurde, ebenfalls in Stickstoffatmosphäre, in einem "`\textit{Organic Characterisation System}"' (OCS) durchgeführt. Die Proben wurden zunächst in einen Rahmen gelegt, der in eine Halterung des OCS gesteckt wurde. Zur Kontaktierung der OLEDs werden nun Kontaktstifte an die Proben gedrückt. Die Steuerung des OCS und die Aufnahme der Messdaten erfolgt durch einen Messrechner.  Durch das Anlegen einer Spannung von 3~V wurden die OLEDs nun auf Funktionsfähigkeit überprüft. Die augenscheinlich Bessere der beiden auf einer Probe vorhandenen OLEDs wurde im Folgenden analysiert.
 
-Zunächst wurde die zu untersuchende OLED mit Hilfe eines Lasers mittig ausgerichtet. Nach dem Schließen der Abdeckung am OCS wurde nun die Automatisierte Messung gestartet. Bei der Messung wird die OLED aus der Ladeposition zu einem Spektrometer hin gedreht.
+Zunächst wurde die zu untersuchende OLED mit Hilfe eines Lasers mittig ausgerichtet. Nach dem Schließen der Abdeckung am OCS wurde nun die automatisierte Messung gestartet. Bei der Messung wird die OLED aus der Ladeposition zu einem Spektrometer hin gedreht.
 
-Die Aufzeichnung der Messdaten erfolgte ebenfalls mit dem Programm "`\textit{kennlinie.exe}"'. Zur Messung wurde ein Spannungsbereich von 0 - 10~V eingestellt, der in 0,5~V Schritten durchlaufen wurde. Für die Spektroskopie wurde ein Wellenlängenbereich von 300 - 800~nm gewählt, welcher in Schritten von 1~nm durchlaufen wurden. Die Integrationszeit des Sensors betrug 10~ms.
+% Die Aufzeichnung der Messdaten erfolgte ebenfalls mit dem Programm "`\textit{kennlinie.exe}"'.
+Zur Messung wurde ein Spannungsbereich von 0 - 10~V eingestellt, der in 0,5~V Schritten durchlaufen wurde. Für die Messung des Spektrums wurde ein Wellenlängenbereich von 300 - 800~nm gewählt, welcher in Schritten von 1~nm durchlaufen wurden. Die Integrationszeit des Spektrometers betrug 10~ms.
 
 
 \chapter{Auswertung der Messergebnisse}
@@ -132,7 +136,7 @@ Bei der Aufzeichnung der Spektren der Proben zeigte sich, dass sich die Maxima d
 
 Dieses Verhalten ist bei Messungen aller Proben zu beobachten. Die Spannungen bei denen die Abweichungen der Maxima auftreten, sind zufällig verteilt.
 
-Dieser Effekt ist physikalisch nicht sinnvoll (vgl. Abschnitt \ref{ch:Messung:sec:Spektrum}) Es wird daher angenommen, dass diese Messungen fehlerhaft sind.
+Dieser Effekt ist physikalisch nicht zu erklären (vgl. Abschnitt \ref{ch:Messung:sec:Spektrum}) Es wird daher angenommen, dass diese Messungen fehlerhaft sind.
 %\begin{figure}%
 %\centering
 %\includegraphics[width=.6\columnwidth]{Grafiken/Verschiebung.pdf}%
@@ -159,7 +163,7 @@ Dieser Effekt ist physikalisch nicht sinnvoll (vgl. Abschnitt \ref{ch:Messung:se
 
 Beim Betrachten der Bestrahlungsstärke der hergestellten Proben zeigt sich ein Aussteuern des Messsystems. Eine Verringerung der Integrationszeit von 30~ms auf 10~ms ermöglichte eine aussteuerfreie Messung bis zu einer Spannung von $U~\approx~5~$V. Bei höheren Spannungen war die Bestrahlung durch die hergestellten OLEDs zu hoch. Abbildung \ref{fig:Aussteuern} zeigt das Aussteuern ab einer Spannung von 5,5~V.
 
-Aufgrund der aufgetreten Messfehler ist eine Auswertung der Messdaten nur eingeschränkt möglich. Eine Auswertung der aus dem Spektrum abgeleiteten Größen, bei Spannungen, die die beschriebenen Fehler aufweisen, ist nicht sinnvoll. 
+Aufgrund der aufgetreten Messfehler ist eine Auswertung der Messdaten nur eingeschränkt möglich. Eine Auswertung der aus dem Spektrum abgeleiteten Größen, bei Spannungen, die die beschriebenen Fehler aufweisen, ist nicht kann daher nicht durchgeführt werden. 
 
 
 %\begin{figure}%
@@ -194,14 +198,14 @@ Aufgrund der aufgetreten Messfehler ist eine Auswertung der Messdaten nur einges
 \begin{figure}%
 \centering
 \includegraphics[width=.6\columnwidth]{Grafiken/jU-Kennlinie.pdf}%
-\caption{j/U-Kennlinien aller hergestellter Proben. Ab einer Grenzspannung $U_{\mathrm{G}}$ nimmt der Strom exponentiell mit der Spannung zu. Gegen 10~V ist das Eintreten einer Sättigung zu erkennen. Die Stromdichte von OLED6 wächst zu beginn auch exponentiell an, ist aber ungefähr eine Größenordnung kleiner als die der anderen Proben.}%
+\caption{$J/U$-Kennlinien aller hergestellter Proben. Ab einer Grenzspannung $U_{\mathrm{G}}$ nimmt der Strom exponentiell mit der Spannung zu. Gegen 10~V ist das Eintreten einer Sättigung zu erkennen. Die Stromdichte von OLED6 wächst zu beginn auch exponentiell an, ist aber ungefähr eine Größenordnung kleiner als die der anderen Proben.}%
 \label{fig:jU-Kennlinie}%
 \end{figure}
 
 %Anhand von Stromdichte/Spannungs ($j/U$)-Kennlinen lässt sich die Stromdichte in Abhängigkeit der angelegten Spannung über die OLED
-OLEDs zeigen beim Betrachten der Stromdichte/Spannung ($j/U$)-Kennlinie Ähnlichkeit zu einer Diodenkennlinie. Abbildung \ref{fig:jUPEDOT} zeigt dieses Verhalten anhand einiger Messungen. Bis zu einer Spannung von 2,5~V ist kein Stromfluss zu beobachten. Die Verschiebung der Potentiale durch die angelegte Spannung reicht noch nicht aus um Ladungsträger zu injizieren.% (vgl. \ref{ch:Grundlagen:sec:Injektion}). \todo{entweder raus oder noch Grundlagen}
+OLEDs zeigen beim Betrachten der Stromdichte/Spannung ($J/U$)-Kennlinie Ähnlichkeit zu einer Diodenkennlinie. Abbildung \ref{fig:jUPEDOT} zeigt dieses Verhalten anhand einiger Messungen. Bis zu einer Spannung von 2,5~V ist kein Stromfluss zu beobachten. Die Verschiebung der Potentiale durch die angelegte Spannung reicht noch nicht aus um Ladungsträger zu injizieren.% (vgl. \ref{ch:Grundlagen:sec:Injektion}). \todo{entweder raus oder noch Grundlagen}
 
-Ab der Grenzspannung U$_\mathrm{G}~\approx~$3~V ist bei Erhöhung der Spannung ein exponentieller Anstieg der Stromdichte zu beobachten. Ab U$_\mathrm{G}~\approx~$8~V flachen die Kurven ab. Die Begrenzung des Stroms ist zum einen durch die Besetzung der Zustände an der Grenzfläche zu den Elektroden zu erklären \cite{SCLC}. Zum anderen ist auf Grund der geringen Beweglichkeit eine hohe Ladungsträgerdichte erforderlich um hohe Stromdichten zu erreichen. Die hohe Ladungsträgerdichte erzeugt jedoch eine Raumladungszone die den Stromfluss begrenzt \cite{SCD}.
+Ab der Grenzspannung $U_\mathrm{G}~\approx~$3~V ist bei Erhöhung der Spannung ein exponentieller Anstieg der Stromdichte zu beobachten. Ab $U_\mathrm{G}~\approx~$8~V flachen die Kurven ab. Die Begrenzung des Stroms ist zum einen durch die Besetzung der Zustände an der Grenzfläche zu den Elektroden zu erklären \cite{SCLC}. Zum anderen ist auf Grund der geringen Beweglichkeit eine hohe Ladungsträgerdichte erforderlich um hohe Stromdichten zu erreichen. Die hohe Ladungsträgerdichte erzeugt jedoch eine Raumladungszone die den Stromfluss begrenzt \cite{SCD}.
 
 Bei einer weiteren Erhöhung der Spannung wäre eine Zerstörung der OLEDs zu erwarten. Bei hohen Stromdichten droht eine Überhitzung der organischen Schicht, was zu einer Degradation dieser führt und die Lebensdauer der Leuchtdiode stark verkürzt.
 
@@ -278,7 +282,7 @@ Weitergehend kann aus Abbildung \ref{fig:Aussteuern} abgeleitet werden, dass sic
 	\subfloat[$U$ = 0 - 4 V]{\includegraphics[width=.58\columnwidth]{Grafiken/jU_PEDOT_ausschnitt.pdf}\label{fig:jUPEDOT_ausschnitt}}
 	\subfloat[$U$ = 0 - 10 V]{\includegraphics[width=.58\columnwidth]{Grafiken/jU_PEDOT.pdf} \label{fig:jUPEDOT}}%
 	\end{adjustwidth}
-\caption[j/U-Kennlinien: OLED mit und ohne PEDOT:PSS]{Auswirkung von PEDOT:PSS auf $j/U$-Kennlinien: OLED1, OLED2 ohne PEDOT:PSS, OLED3, OLED7 mit PEDOT:PSS. \textbf{(a)} Im Ausschnitt der j/U-Kennlinie kann man die Grenzspannung $U_{\mathrm{G}}$ für die gezeigten OLEDs erkennen. \textbf{(b)} Ab der Grenzspanspannung steigt die Stromdichte stark an, bis sie gegen Ende der Kurve abflacht.}%
+\caption[$J/U$-Kennlinien: OLED mit und ohne PEDOT:PSS]{Auswirkung von PEDOT:PSS auf $J/U$-Kennlinien: OLED1, OLED2 ohne PEDOT:PSS, OLED3, OLED7 mit PEDOT:PSS. \textbf{(a)} Im Ausschnitt der $J/U$-Kennlinie kann man die Grenzspannung $U_{\mathrm{G}}$ für die gezeigten OLEDs erkennen. \textbf{(b)} Ab der Grenzspanspannung steigt die Stromdichte stark an, bis sie gegen Ende der Kurve abflacht.}%
 \label{fig:jUPedot_sub}%
 \end{figure}
 Bei der Herstellung wurden Proben sowohl mit, als auch ohne PEDOT:PSS hergestellt.
@@ -319,7 +323,7 @@ OLED6 weist bei der geringsten Schichtdicke auch die geringste Intensität auf.
 %Die großen Abweichungen zwischen OLED3 und OLED7 könnte zum einen daraus resultieren, dass die Schichtdicke um wenige Nanometer abweicht. Bei geringen Schichtdicken kann eine solche Abweichung einen realtiv große Änderung der Gesamtschichtdicke bedeuten, wogegen bei großen Schichtdicken eine Variation von wenigen Nanometern geringere Auswirkungen erwarten lässt.
 Zum einen ist denkbar, dass durch die wesentlich dünnere Schichtdicke auch die Emitterzone dünner ist. Daraus resultiert eine geringe Strahlungsemission.
 Jedoch ist bei OLED6 auch zu beachten, dass im Vergleich zu den anderen Proben nur ein sehr geringer Strom durch die Probe fließt. Damit befinden sich viel weniger Ladungsträger im Material die zur Exzitonenbildung beitragen können.
-Eigentlich sollte eine dünne Polymerschicht einen höheren Strom zur Folge haben. Dies steht im Widerspruch zur $j/U$-Kennlinie von OLED6 (vgl. Abschnitt \ref{ch:Messung:sec:jU}).
+Eigentlich sollte eine dünne Polymerschicht einen höheren Strom zur Folge haben. Dies steht im Widerspruch zur $J/U$-Kennlinie von OLED6 (vgl. Abschnitt \ref{ch:Messung:sec:jU}).
 
 Dicke Schichten scheinen weniger anfällig für Störungen im Herstellungsprozess zu sein, und zeigen eine gute Reproduzierbarkeit der Proben. Die Unterschiede zwischen OLED3 und OLED7 lassen auf Probleme bei der Herstellung von OLED3 schließen. Bei der Herstellung ist allerdings keine Abweichung in den Prozessierungen aufgefallen. 
 
