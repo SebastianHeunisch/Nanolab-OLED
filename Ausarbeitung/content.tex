@@ -8,29 +8,33 @@
 Im Folgenden sollen die für den Versuch notwendigen Grundlagen von OLEDs erläutert werden. Die Erklärung soll nur einen kurzen Überblick über die Funktionsweiße bieten und berücksichtigt auch nur die im Versuch hergestellten Polymer-OLEDs. Für eine detailliertere  Beschreibung der Theorie sei auf \cite{PE} und \cite{Grundlagen} verwiesen.
 \section{Organische Halbleiter in OLEDs}
 \label{ch:Grundlagen:sec:Injektion}
-Durch die Bindung von Atomen in einer Polymerkette werden Molekülorbitale ausgebildet. Bei diesen Molekülorbitalen handelt es sich um energetische Zustände. Elektronen besetzen ohne äußere Anregung die energetisch günstigsten Zustände. Wird ein Elektron aus dem höchsten besetzten Molekülorbital (engl. \textit{Highest Ocupied Molecule Orbital} - HOMO) in das niedrigste unbesetzte Molekülorbital  (engl. \textit{Lowest Unocupied Molecule Orbital} - LUMO) angehoben, kann es in das LUMO einer benachbarten Polymerkette hüpfen (engl. \textit{hopping}). Analog können Löcher dann vom HOMO einer Kette in eine andere wechseln. Der Ladungsträgertransport in Polymeren erfolgt somit durch den Übergang von Elektronen bzw. Löchern zwischen den Molekülorbitalen der einzelnen Polymerketten. Die LUMO- bzw. HOMO-Niveaus der Polymere lassen sich somit mit dem Leitungs- bzw. Valenzband eines Anorganischen Halbleiters vergleichen. Da sich die Energieniveaus der einzelnen Ketten leicht unterscheiden, sind die Bandgrenzen kein Energiezustand, sondern lediglich eine Ansammlung an Zuständen \cite{PE}.
+Durch die Bindung von Atomen in einer Polymerkette werden Molekülorbitale ausgebildet. Bei diesen Molekülorbitalen handelt es sich um energetische Zustände. Elektronen besetzen ohne äußere Anregung die energetisch günstigsten Zustände. Wird ein Elektron aus dem höchsten besetzten Molekülorbital (engl. \textit{Highest Ocupied Molecule Orbital} - HOMO) in das niedrigste unbesetzte Molekülorbital  (engl. \textit{Lowest Unocupied Molecule Orbital} - LUMO) angehoben, kann es in das LUMO einer benachbarten Polymerkette hüpfen (engl. \textit{hopping}). Analog können Löcher dann vom HOMO einer Kette in eine andere wechseln. Der Ladungsträgertransport in Polymeren erfolgt somit durch den Übergang von Elektronen bzw. Löchern zwischen den Molekülorbitalen der einzelnen Polymerketten.
+%  Die LUMO- bzw. HOMO-Niveaus der Polymere lassen sich somit mit dem Leitungs- bzw. Valenzband eines Anorganischen Halbleiters vergleichen.
+Die Energien der LUMO- bzw. HOMO-Niveaus einzelner Ketten unterscheiden sich. Daher gibt es, im Gegensatz zu anorganischen Halbleitern, keine diskreten Bandniveaus, sondern HOMO und LUMO stellen lediglich eine Ansammlung von Energiezuständen dar \cite{PE}.
 
-Um Elektronen in das Polymer zu injizieren muss die Austrittsarbeit der Elektroden überwunden werden. Die Austrittsarbeit ist daher der Abstand des Ferminiveaus vom LUMO-Niveau des Polymers. Dem entsprechend muss die Kathode eine geringe Austrittsarbeit besitzen um die Elektroneninjektion zu erleichtern. Analog muss die Anode eine hohe Austrittsarbeit haben, um die Löcherinjektion zu begünstigen. Im Versuch wurde als Katode eine Calcium-/Aluminiumschicht und als Anode Indiumzinnoxid (ITO) verwendet.
+Um Ladungsträger in das Polymer zu injizieren muss eine Energiebarriere zwischen den Elektroden und dem organischen Halbleiter überwunden werden. Zur Injektion von Elektronen ist die Energiebarriere durch den Abstand des Ferminiveaus in der Kathode zu LOMO im organischen Halbleiter bestimmt. Analog ist die Energiebarriere zur Lochinjektion durch den Abstand des Ferminiveaus in der Anode zu HOMO im organischen Halbleiter bestimmt. \todo{nochma lesen}
+ Dem entsprechend muss die Kathode eine geringe Austrittsarbeit besitzen um die Elektroneninjektion zu erleichtern. Analog muss die Anode eine hohe Austrittsarbeit haben, um die Löcherinjektion zu begünstigen.
+ Im Versuch wurde als Katode eine Calcium-/Aluminiumschicht und als Anode Indiumzinnoxid (ITO) verwendet. \todo{Austrittsarbeit}
 
 Ladungsträger können von den Elektroden entweder thermisch oder durch tunneln in die Polymerschicht gelangen. Durch eine Elektronen- bzw. Lochinjektionsschicht kann die Injektion von Ladungsträgern begünstigt werden \cite{Versuchsanleitung}. Im Versuch wurde \mbox{PEDOT:PSS} als Lochinjektionsschicht (engl. \textit{Hole Injection Layer} - HIL) verwendet.
 % \label{ch:Grundlagen:sec:PEDOT}
 
 \section{Strahlungserzeugung}
 \label{ch:Grundlagen:sec:Lichterzeugung}
-Wie bei anorganischen Halbleitern kann bei organischen Halbleitern durch die Rekombination von Elektronen und Löchern Strahlung erzeugt werden. Anders als beim anorganischen Halbleiter zeigt das Emissionsspektrum von organischen Halbleitern allerdings Strahlung geringerer Energie
+% Wie bei anorganischen Halbleitern kann bei organischen Halbleitern durch die Rekombination von Elektronen und Löchern Strahlung erzeugt werden. Anders als beim anorganischen Halbleiter zeigt das Emissionsspektrum von organischen Halbleitern allerdings Strahlung geringerer Energie
 %\begin{equation}
 % W=h\nu
 %\end{equation}
 %($h$: Plancksches Wirkungsquantum, $\nu$: Frequenz der emittierten Strahlung)
 %
-als der energetische Abstand von LUMO und HOMO (beim anorganischen Halbleiter Leitungs- und Valenzband).
+% als der energetische Abstand von LUMO und HOMO (beim anorganischen Halbleiter Leitungs- und Valenzband).
 
 Diese geringere Energie ist ein Resultat der Exzitonenbildung im organischen Halbleiter. Kommen sich Elektron und Loch nahe genug, kann es zu einer Paarbildung der beiden kommen. Ein Elektronen-Loch-Paar kann als  Quasiteilchen betrachtet werden, das aufgrund des Ladungsausgleiches der Elektronen- und Lochladung nach außen neutral ist. An dieser Stelle ist zu erwähnen, dass nur ein geringer Anteil der injizierten Ladungsträger Exzitonen bilden (vgl. \cite{Versuchsanleitung}) und viele Ladungsträger das komplette Bauteil durchlaufen. 
 
 Ein solches Exziton kann strahlend zerfallen. Die freiwerdende Energie entspricht der Energiedifferenz zwischen LUMO und HOMO abzüglich der Bindungsenergie des Exzitons. Aus diesem Grund ist die abgestrahlte Energie geringer als der energetische Abstand von LUMO und HOMO.
 
 Da sich HOMO und LUMO benachbarter Ketten unterscheiden, unterscheiden sich auch die emittierten Wellenlängen. Es wird somit, im Gegensatz zum anorganischen Halbleiter, ein kontinuierliches Spektrum emittiert.
-
+\todo{alles neu}
 
 %% ===========================
 \chapter{Versuchsdurchführung}
@@ -205,7 +209,7 @@ Aufgrund der aufgetreten Messfehler ist eine Auswertung der Messdaten nur einges
 %Anhand von Stromdichte/Spannungs ($j/U$)-Kennlinen lässt sich die Stromdichte in Abhängigkeit der angelegten Spannung über die OLED
 OLEDs zeigen beim Betrachten der Stromdichte/Spannung ($J/U$)-Kennlinie Ähnlichkeit zu einer Diodenkennlinie. Abbildung \ref{fig:jUPEDOT} zeigt dieses Verhalten anhand einiger Messungen. Bis zu einer Spannung von 2,5~V ist kein Stromfluss zu beobachten. Die Verschiebung der Potentiale durch die angelegte Spannung reicht noch nicht aus um Ladungsträger zu injizieren.% (vgl. \ref{ch:Grundlagen:sec:Injektion}). \todo{entweder raus oder noch Grundlagen}
 
-Ab der Grenzspannung $U_\mathrm{G}~\approx~$3~V ist bei Erhöhung der Spannung ein exponentieller Anstieg der Stromdichte zu beobachten. Ab $U_\mathrm{G}~\approx~$8~V flachen die Kurven ab. Die Begrenzung des Stroms ist zum einen durch die Besetzung der Zustände an der Grenzfläche zu den Elektroden zu erklären \cite{SCLC}. Zum anderen ist auf Grund der geringen Beweglichkeit eine hohe Ladungsträgerdichte erforderlich um hohe Stromdichten zu erreichen. Die hohe Ladungsträgerdichte erzeugt jedoch eine Raumladungszone die den Stromfluss begrenzt \cite{SCD}.
+Ab der Grenzspannung $U_\mathrm{G}~\approx~$3~V ist bei Erhöhung der Spannung ein exponentieller Anstieg der Stromdichte zu beobachten. Ab $U_\mathrm{G}~\approx~$8~V flachen die Kurven ab. Die Begrenzung des Stroms ist zum Einen durch die Besetzung der Zustände an der Grenzfläche zu den Elektroden zu erklären \cite{SCLC}. Zum Anderen ist auf Grund der geringen Beweglichkeit eine hohe Ladungsträgerdichte erforderlich um hohe Stromdichten zu erreichen. Die hohe Ladungsträgerdichte erzeugt Raumladungen die den Stromfluss begrenzen \cite{SCD}.
 
 Bei einer weiteren Erhöhung der Spannung wäre eine Zerstörung der OLEDs zu erwarten. Bei hohen Stromdichten droht eine Überhitzung der organischen Schicht, was zu einer Degradation dieser führt und die Lebensdauer der Leuchtdiode stark verkürzt.
 
@@ -235,9 +239,9 @@ Anhand der Messdaten zeigt sich eine Spannungsabhängigkeit des Energiedichtespen
 Auch die Leuchtdichte fängt erst ab der Grenzspannung $U_{\mathrm{G}}$ an zu steigen. Zunächst nimmt die Leuchtdichte exponentiell mit der Spannung zu. Bei OLED1 und OLED2 zeigt sich bei hohen Spannungswerten eine Abnahme der Leuchtdichte. Hieraus folgt, dass die Leuchtdichte für OLED1 und OLED2 im untersuchten Bereich ein Maximum zwischen den Messwerten hat.
 Aufgrund der Aussteuerung des Messsystems (vgl. Abschnitt \ref{ch:Messung:sec:Fehler}) sind die gemessenen Werte der Leuchtdichte bei den übrigen OLEDs nicht verwendbar. Allerdings kann man anhand Breite und Höhe der Spektren bei hohen Spannungswerten ein Abnehmen der Leuchtdichte annehmen. In Abbildung \ref{fig:Aussteuern} ist dies für den Spannungswert $U = 10$~V zu erkennen, der in Höhe und Breite kleiner als das Spektrum bei 9~V ist.
 
-Durch das Erhöhen der angelegten Spannung erhöht sich auch die Zahl der injizierten Ladungsträger. Hiermit erhöht sich auch die Wahrscheinlichkeit zur Bildung eines Exzitons und damit zur strahlenden Rekombination. Mit weiter steigender Spannung verringert sich die Wahrscheinlichkeit zur Bildung eines Exzitons jedoch wieder, da sich die Ladungsträger durch das höhere Feld auch schneller durch die Emmisionszone bewegen.% Außerdem sinkt auch, wie in \ref{ch:Messung:sec:jU} beschrieben, die Zahl der injizierten Ladungsträger ab einer gewissen Spannung.
+Durch das Erhöhen der angelegten Spannung erhöht sich auch die Zahl der injizierten Ladungsträger. Hiermit erhöht sich auch die Wahrscheinlichkeit zur Bildung eines Exzitons und damit zur strahlenden Rekombination. Mit weiter steigender Spannung verringert sich die Wahrscheinlichkeit zur Bildung eines Exzitons jedoch wieder, da sich die Ladungsträger durch das höhere Feld auch schneller durch die Emissionszone bewegen.% Außerdem sinkt auch, wie in \ref{ch:Messung:sec:jU} beschrieben, die Zahl der injizierten Ladungsträger ab einer gewissen Spannung.
 
-Weitergehend kann aus Abbildung \ref{fig:Aussteuern} abgeleitet werden, dass sich das Maximum der spektralen Bestrahlungsstärke durch eine Erhöhung der Spannung nicht verändert. Das Emissionsspektrum von OLEDs hängt von der Energiedifferenz zwischen LOMO und HUMO ab. Diese Energiedifferenz hängt hauptsächlich von der Zusammensetzung der Emmisionschicht ab. Eine Änderung des Abstands von LUMO und HOMO mit der angelegten Spannung ist also physikalisch auch nicht sinnvoll.
+Weitergehend kann aus Abbildung \ref{fig:Aussteuern} abgeleitet werden, dass sich das Maximum der spektralen Bestrahlungsstärke durch eine Erhöhung der Spannung nicht verändert. \todo{ Das Emissionsspektrum von OLEDs hängt von der Energiedifferenz zwischen LOMO und HUMO ab. Diese Energiedifferenz hängt hauptsächlich von der Zusammensetzung der Emmisionschicht ab. Eine Änderung des Abstands von LUMO und HOMO mit der angelegten Spannung ist also physikalisch auch nicht sinnvoll.}
 
 
 %a.) Typischer diodenkennlinienverlauf
@@ -325,7 +329,7 @@ Zum einen ist denkbar, dass durch die wesentlich dünnere Schichtdicke auch die E
 Jedoch ist bei OLED6 auch zu beachten, dass im Vergleich zu den anderen Proben nur ein sehr geringer Strom durch die Probe fließt. Damit befinden sich viel weniger Ladungsträger im Material die zur Exzitonenbildung beitragen können.
 Eigentlich sollte eine dünne Polymerschicht einen höheren Strom zur Folge haben. Dies steht im Widerspruch zur $J/U$-Kennlinie von OLED6 (vgl. Abschnitt \ref{ch:Messung:sec:jU}).
 
-Dicke Schichten scheinen weniger anfällig für Störungen im Herstellungsprozess zu sein, und zeigen eine gute Reproduzierbarkeit der Proben. Die Unterschiede zwischen OLED3 und OLED7 lassen auf Probleme bei der Herstellung von OLED3 schließen. Bei der Herstellung ist allerdings keine Abweichung in den Prozessierungen aufgefallen. 
+% Dicke Schichten scheinen weniger anfällig für Störungen im Herstellungsprozess zu sein, und zeigen eine gute Reproduzierbarkeit der Proben. Die Unterschiede zwischen OLED3 und OLED7 lassen auf Probleme bei der Herstellung von OLED3 schließen. Bei der Herstellung ist allerdings keine Abweichung in den Prozessierungen aufgefallen. 
 
 
 \chapter{Zusammenfassung}
@@ -340,5 +344,6 @@ Die hergestellten Proben wurden anschließend am "`\textit{Organic Characterisati
 Es konnten Auswirkungen der PEDOT:PSS Schicht beobachtet werden. Unter Verwendung von PEDOT:PSS konnten durch eine leichtere Lochinjektion höhere Stromdichten erreicht werden.
 Aus einer Erhöhung der Spannung resultierte eine höhere Stromdichte sowie eine höhere Strahlungsintensität. Eine Verschiebung des Spektrums durch Variation der Spannung konnte nicht beobachtet werden.
 
-Bei der Auswertung der Proben zeigte sich, dass es bei unterschiedlichen Proben mit gleichen Herstellungsparametern zu unterschiedlichen Ergebnissen kommen kann. Eine große Emitterschichtdicke führte zu einer besseren Reproduzierbarkeit.
+Bei der Auswertung der Proben zeigte sich, dass es bei unterschiedlichen Proben mit gleichen Herstellungsparametern zu unterschiedlichen Ergebnissen kommen kann.\todo{noch nen satz}
+% Eine große Emitterschichtdicke führte zu einer besseren Reproduzierbarkeit.
 
