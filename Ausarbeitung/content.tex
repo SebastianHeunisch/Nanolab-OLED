@@ -207,7 +207,8 @@ Aufgrund der aufgetreten Messfehler ist eine Auswertung der Messdaten nur einges
 \end{figure}
 
 %Anhand von Stromdichte/Spannungs ($j/U$)-Kennlinen lässt sich die Stromdichte in Abhängigkeit der angelegten Spannung über die OLED
-OLEDs zeigen beim Betrachten der Stromdichte/Spannung ($J/U$)-Kennlinie Ähnlichkeit zu einer Diodenkennlinie. Abbildung \ref{fig:jUPEDOT} zeigt dieses Verhalten anhand einiger Messungen. Bis zu einer Spannung von 2,5~V ist kein Stromfluss zu beobachten. Die Verschiebung der Potentiale durch die angelegte Spannung reicht noch nicht aus um Ladungsträger zu injizieren.% (vgl. \ref{ch:Grundlagen:sec:Injektion}). \todo{entweder raus oder noch Grundlagen}
+Der Stromdichte/Spannung ($J/U$)-Verlauf entspricht dem einer Diode. Abbildung \ref{fig:jUPEDOT} zeigt dieses Verhalten anhand einiger Messungen. Bis zu einer Spannung von 2,5~V ist kein Stromfluss zu beobachten.
+% Die Verschiebung der Potentiale durch die angelegte Spannung reicht noch nicht aus um Ladungsträger zu injizieren.% (vgl. \ref{ch:Grundlagen:sec:Injektion}). \todo{entweder raus oder noch Grundlagen}
 
 Ab der Grenzspannung $U_\mathrm{G}~\approx~$3~V ist bei Erhöhung der Spannung ein exponentieller Anstieg der Stromdichte zu beobachten. Ab $U_\mathrm{G}~\approx~$8~V flachen die Kurven ab. Die Begrenzung des Stroms ist zum Einen durch die Besetzung der Zustände an der Grenzfläche zu den Elektroden zu erklären \cite{SCLC}. Zum Anderen ist auf Grund der geringen Beweglichkeit eine hohe Ladungsträgerdichte erforderlich um hohe Stromdichten zu erreichen. Die hohe Ladungsträgerdichte erzeugt Raumladungen die den Stromfluss begrenzen \cite{SCD}.
 
@@ -301,13 +302,16 @@ Beim Betrachten von \ref{fig:jUPEDOT} zeigt sich, dass beide Proben mit PEDOT:PS
 
 Bei der Herstellung wurden Proben mit unterschiedlicher Drehzahlen beim Aufbringen der Emitterschicht hergestellt.
 Hieraus resultieren unterschiedliche Schichtdicken. 
-Die Proben OLED3 und OLED7 haben eine Emitterschichtdicke von $\sim60$~nm. OLED6 hat eine Emitterschichtdicke zwischen 30~nm und 40~nm. Die Proben OLED4 und OLED8 wurden bei geringer Drehzahl (500~min$^{-1}$ für 55~s) hergestellt. Daraus folgt eine wesentlich höhere Schichtdicke. Unter der Annahme, dass kein Material von der Probe geschleudert wird, kann eine maximale Schichtdicke abgeschätzt werden. Mit 120 $\upmu$l "`Super Yellow"' folgt damit:
-
-\begin{equation}
-d=\frac{V}{A}=\frac{120~\upmu \mathrm{l}}{(16~\mathrm{mm})^2}=4,7~\upmu \mathrm{m}
-\label{eq:dicke}
-\end{equation}
-Die reale Schichtdicke wird allerdings etwas geringer sein. Durch die geringe Drehzahl ist weitergehend mit einer inhomogenen Schicht zu rechnen. Auch ein Antrocknen des Lacks während des Spin-Coatens ist denkbar.
+Die Proben OLED3 und OLED7 haben eine Emitterschichtdicke von $\sim60$~nm. OLED6 hat eine Emitterschichtdicke zwischen 30~nm und 40~nm. Die Proben OLED4 und OLED8 wurden bei geringer Drehzahl (500~min$^{-1}$ für 55~s) hergestellt. Daraus folgt eine wesentlich höhere Schichtdicke. Durch die geringe Drehzahl ist weitergehend mit einer inhomogenen Schicht zu rechnen.
+Außerdem kann aufgrund der geringeren Drehzahl mit einer inhomogenen Schicht gerechnet werden.
+% Unter der Annahme, dass kein Material von der Probe geschleudert wird, kann eine maximale Schichtdicke abgeschätzt werden. Mit 120 $\upmu$l "`Super Yellow"' folgt damit:
+% 
+% \begin{equation}
+% d=\frac{V}{A}=\frac{120~\upmu \mathrm{l}}{(16~\mathrm{mm})^2}=4,7~\upmu \mathrm{m}
+% \label{eq:dicke}
+% \end{equation}
+% Die reale Schichtdicke wird allerdings etwas geringer sein.
+%  Auch ein Antrocknen des Lacks während des Spin-Coatens ist denkbar.
 
 \begin{figure}%
 \centering
@@ -330,6 +334,44 @@ Jedoch ist bei OLED6 auch zu beachten, dass im Vergleich zu den anderen Proben n
 Eigentlich sollte eine dünne Polymerschicht einen höheren Strom zur Folge haben. Dies steht im Widerspruch zur $J/U$-Kennlinie von OLED6 (vgl. Abschnitt \ref{ch:Messung:sec:jU}).
 
 % Dicke Schichten scheinen weniger anfällig für Störungen im Herstellungsprozess zu sein, und zeigen eine gute Reproduzierbarkeit der Proben. Die Unterschiede zwischen OLED3 und OLED7 lassen auf Probleme bei der Herstellung von OLED3 schließen. Bei der Herstellung ist allerdings keine Abweichung in den Prozessierungen aufgefallen. 
+
+\section{Effizienzen der hergestellten OLEDs}
+
+\begin{table}
+\begin{adjustwidth}{-1cm}{-1cm}
+	\centering
+	 
+
+%  \renewcommand{\arraystretch}{1.3}
+
+
+\begin{tabular}{lccccccc}
+\toprule
+&OLED1&OLED2&OLED3&OLED4&OLED6&OLED7&OLED8\\
+\midrule
+Lichtausbeute &41,5&-&18,9&44,2&-&38,5&45,3\\
+ in lm/W&&&&&&&\\
+\end{tabular}
+
+
+
+%  \renewcommand{\arraystretch}{1.3}
+
+
+\begin{tabular}{lccccccc}
+\midrule
+&Glühlampe&Weiße OLED&Weise LED&Energiespaarlampe&&&\\
+\midrule
+Lichtausbeute&15&36&60&90&&&\\
+ in lm/W&&&&&&&\\
+\bottomrule
+\end{tabular}
+\end{adjustwidth}
+\end{table}
+
+
+
+
 
 
 \chapter{Zusammenfassung}
