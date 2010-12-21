@@ -12,9 +12,9 @@ Durch die Bindung von Atomen in einer Polymerkette werden Molekülorbitale ausgeb
 %  Die LUMO- bzw. HOMO-Niveaus der Polymere lassen sich somit mit dem Leitungs- bzw. Valenzband eines Anorganischen Halbleiters vergleichen.
 Die Energien der LUMO- bzw. HOMO-Niveaus einzelner Ketten unterscheiden sich. Daher gibt es, im Gegensatz zu anorganischen Halbleitern, keine diskreten Bandniveaus, sondern HOMO und LUMO stellen lediglich eine Ansammlung von Energiezuständen dar \cite{PE}.
 
-Um Ladungsträger in das Polymer zu injizieren muss eine Energiebarriere zwischen den Elektroden und dem organischen Halbleiter überwunden werden. Zur Injektion von Elektronen ist die Energiebarriere durch den Abstand des Ferminiveaus in der Kathode zu LOMO im organischen Halbleiter bestimmt. Analog ist die Energiebarriere zur Lochinjektion durch den Abstand des Ferminiveaus in der Anode zu HOMO im organischen Halbleiter bestimmt. \todo{nochma lesen}
- Dem entsprechend muss die Kathode eine geringe Austrittsarbeit besitzen um die Elektroneninjektion zu erleichtern. Analog muss die Anode eine hohe Austrittsarbeit haben, um die Löcherinjektion zu begünstigen.
- Im Versuch wurde als Katode eine Calcium-/Aluminiumschicht und als Anode Indiumzinnoxid (ITO) verwendet. \todo{Austrittsarbeit}
+Um Ladungsträger in das Polymer zu injizieren muss eine Energiebarriere zwischen den Elektroden und dem organischen Halbleiter überwunden werden. Zur Injektion von Elektronen ist die Energiebarriere durch den Abstand des Ferminiveaus in der Kathode zu LOMO im organischen Halbleiter bestimmt. Analog ist die Energiebarriere zur Lochinjektion durch den Abstand des Ferminiveaus in der Anode zu HOMO im organischen Halbleiter bestimmt \cite{SWB-330987240}. 
+Dem entsprechend muss die Kathode eine geringe Austrittsarbeit und die Anode eine hohe Austrittsarbeit, um die Elektronen- bzw. Lochinjektion zu begünstigen.
+Im Versuch wurde als Katode eine Calcium-/Aluminiumschicht und als Anode Indiumzinnoxid (ITO) verwendet.
 
 Ladungsträger können von den Elektroden entweder thermisch oder durch tunneln in die Polymerschicht gelangen. Durch eine Elektronen- bzw. Lochinjektionsschicht kann die Injektion von Ladungsträgern begünstigt werden \cite{Versuchsanleitung}. Im Versuch wurde \mbox{PEDOT:PSS} als Lochinjektionsschicht (engl. \textit{Hole Injection Layer} - HIL) verwendet.
 % \label{ch:Grundlagen:sec:PEDOT}
@@ -28,13 +28,22 @@ Ladungsträger können von den Elektroden entweder thermisch oder durch tunneln in
 %($h$: Plancksches Wirkungsquantum, $\nu$: Frequenz der emittierten Strahlung)
 %
 % als der energetische Abstand von LUMO und HOMO (beim anorganischen Halbleiter Leitungs- und Valenzband).
+Vorraussetzung für die strahlende Rekombination in organischen Halbleitern ist die Bildung von Exzitonen. Ein Elektron und ein Loch, die sich durch die polymerschicht bewegen, können in einen gebundenen Zustand übergehen. Hierdurch entsteht ein neutrales Quasiteilchen, das aber meist innerhalb einiger Nanosekunden wieder zerfällt. Dieser Zerfall kann strahlungsfrei, unter Abgabe von Phononen, oder auch strahlend erfolgen.
 
-Diese geringere Energie ist ein Resultat der Exzitonenbildung im organischen Halbleiter. Kommen sich Elektron und Loch nahe genug, kann es zu einer Paarbildung der beiden kommen. Ein Elektronen-Loch-Paar kann als  Quasiteilchen betrachtet werden, das aufgrund des Ladungsausgleiches der Elektronen- und Lochladung nach außen neutral ist. An dieser Stelle ist zu erwähnen, dass nur ein geringer Anteil der injizierten Ladungsträger Exzitonen bilden (vgl. \cite{Versuchsanleitung}) und viele Ladungsträger das komplette Bauteil durchlaufen. 
 
-Ein solches Exziton kann strahlend zerfallen. Die freiwerdende Energie entspricht der Energiedifferenz zwischen LUMO und HOMO abzüglich der Bindungsenergie des Exzitons. Aus diesem Grund ist die abgestrahlte Energie geringer als der energetische Abstand von LUMO und HOMO.
 
-Da sich HOMO und LUMO benachbarter Ketten unterscheiden, unterscheiden sich auch die emittierten Wellenlängen. Es wird somit, im Gegensatz zum anorganischen Halbleiter, ein kontinuierliches Spektrum emittiert.
-\todo{alles neu}
+
+
+
+
+
+
+% Diese geringere Energie ist ein Resultat der Exzitonenbildung im organischen Halbleiter. Kommen sich Elektron und Loch nahe genug, kann es zu einer Paarbildung der beiden kommen. Ein Elektronen-Loch-Paar kann als  Quasiteilchen betrachtet werden, das aufgrund des Ladungsausgleiches der Elektronen- und Lochladung nach außen neutral ist. An dieser Stelle ist zu erwähnen, dass nur ein geringer Anteil der injizierten Ladungsträger Exzitonen bilden (vgl. \cite{Versuchsanleitung}) und viele Ladungsträger das komplette Bauteil durchlaufen.
+%
+% Ein solches Exziton kann strahlend zerfallen. Die freiwerdende Energie entspricht der Energiedifferenz zwischen LUMO und HOMO abzüglich der Bindungsenergie des Exzitons. Aus diesem Grund ist die abgestrahlte Energie geringer als der energetische Abstand von LUMO und HOMO.
+%
+% Da sich HOMO und LUMO benachbarter Ketten unterscheiden, unterscheiden sich auch die emittierten Wellenlängen. Es wird somit, im Gegensatz zum anorganischen Halbleiter, ein kontinuierliches Spektrum emittiert.
+% \todo{alles neu}
 
 %% ===========================
 \chapter{Versuchsdurchführung}
@@ -242,7 +251,7 @@ Aufgrund der Aussteuerung des Messsystems (vgl. Abschnitt \ref{ch:Messung:sec:Fe
 
 Durch das Erhöhen der angelegten Spannung erhöht sich auch die Zahl der injizierten Ladungsträger. Hiermit erhöht sich auch die Wahrscheinlichkeit zur Bildung eines Exzitons und damit zur strahlenden Rekombination. Mit weiter steigender Spannung verringert sich die Wahrscheinlichkeit zur Bildung eines Exzitons jedoch wieder, da sich die Ladungsträger durch das höhere Feld auch schneller durch die Emissionszone bewegen.% Außerdem sinkt auch, wie in \ref{ch:Messung:sec:jU} beschrieben, die Zahl der injizierten Ladungsträger ab einer gewissen Spannung.
 
-Weitergehend kann aus Abbildung \ref{fig:Aussteuern} abgeleitet werden, dass sich das Maximum der spektralen Bestrahlungsstärke durch eine Erhöhung der Spannung nicht verändert. \todo{ Das Emissionsspektrum von OLEDs hängt von der Energiedifferenz zwischen LOMO und HUMO ab. Diese Energiedifferenz hängt hauptsächlich von der Zusammensetzung der Emmisionschicht ab. Eine Änderung des Abstands von LUMO und HOMO mit der angelegten Spannung ist also physikalisch auch nicht sinnvoll.}
+Weitergehend kann aus Abbildung \ref{fig:Aussteuern} abgeleitet werden, dass sich das Maximum der spektralen Bestrahlungsstärke durch eine Erhöhung der Spannung nicht verändert. Das Emissionsspektrum von OLEDs hängt von der Energiedifferenz zwischen LOMO und HUMO ab (vgl. Abschnitt \ref{ch:Grundlagen:sec:Lichterzeugung}). Diese Energiedifferenz hängt hauptsächlich von der Zusammensetzung der Emmisionschicht ab. Eine Änderung des Abstands von LUMO und HOMO mit der angelegten Spannung ist also physikalisch auch nicht erklärbar.
 
 
 %a.) Typischer diodenkennlinienverlauf
